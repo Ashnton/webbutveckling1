@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Dokument */
+.gronrutadiv {
+    background-color:mediumspringgreen;
+    display:flex;
+    height:500px;
+    width:600px;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.vitrutadiv {
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100px;
+    width:100px;
+}
+.gulrutadiv {
+    background-color:yellow;
+    display:flex;
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content:space-evenly;
+    height:300px;
+    width:600px;
+}
+.rödrutadiv {
+    background-color:red;
+    display:flex;
+    flex-direction:row;
+    align-self:flex-end;
+    width:100px;
+    height:110px;
+}
+.blarutadiv {
+    background-color:blue;
+    display:flex;
+    flex-direction:row;
+    align-items:flex-start;
+    width:100px;
+    height:110px;
+}
+.blarutadiv2 {
+    background-color:blue;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:200px;
+    width:594px;
+    border-style:solid;
+}
+.vitrutadiv2 {
+    background-color:white;
+    display:flex;
+    width:800px;
+    border-style:solid;
+    border-color:green;
+    align-items:flex-start;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.rodrutadiv2 {
+    background-color:red;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:100px;
+    height:100px;
+    border-style:solid;
+    box-sizing:border-box;
+}
+.blarutadiv3 {
+    background-color:blue;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:300px;
+    height:100px;
+    border-style:solid;
+    box-sizing:border-box;
+}

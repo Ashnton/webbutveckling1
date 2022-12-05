@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+h1 {
+    font-size:100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#idA {
+    position:absolute;  top:210px;  left:100px;  
+    color:blue;
+    z-index:1;
+    background-color:chartreuse;
+}
+#idN {
+    color:violet;
+    position:absolute;  top:190px;  left:150px; 
+    z-index:5;
+    background-color:blueviolet;
+}
+#idT {
+    color:green;
+    position:absolute;  top:150px;  left:200px; 
+    z-index:2;
+    background-color:darkorange;
+}
+#idO {
+    color:yellow;
+    position:absolute;  top:220px;  left:250px; 
+    z-index:4;
+    background-color:lightgreen;
+}
+#idN2 {
+    color:red;
+    position:absolute;  top:190px;  left:300px; 
+    z-index:3;
+    background-color:dodgerblue;
+}
+
+h1 {
+    font-size:100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#idA2 {
+    position:absolute;  top:3em;  left:1em;  
+    color:blue;
+    z-index:1;
+    background-color:gold;
+}
+#idN22 {
+    color:violet;
+    position:absolute;  top:3em;  left:2em; 
+    z-index:5;
+    background-color:sandybrown;
+}
+#idT2 {
+    color:green;
+    position:absolute;  top:3em;  left:3em; 
+    z-index:2;
+    background-color:crimson;
+}
+#idO2 {
+    color:yellow;
+    position:absolute;  top:3em;  left:4em; 
+    z-index:4;
+    background-color:teal;
+}
+#idN3 {
+    color:red;
+    position:relative;  top:3em;  left:5em; 
+    z-index:3;
+    background-color:lightgreen;
+    width:70px;
+}

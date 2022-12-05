@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+header {
+    grid-area: header;
+    text-align: center;
+    font-size: x-large;
+}
+footer {
+    grid-area: footer;
+    text-align: right;
+}
+img {
+    border: solid 1px black;
+}
+.grid-container {
+    width:810px;
+    display:grid;
+    grid-template-columns: 400px 400px;
+    grid-template-areas: 
+    'header header'
+    'rubrik1 rubrik2'
+    'innehall1 innehall2'
+    'footer footer';
+    margin:auto;
+    padding:10px;
+    border: solid 2px black;
+    grid-gap:10px;
+    background-color:white;
+}
+.rubrik1 {
+    grid-area: rubrik1;
+    text-align:center;
+    font-size:24px;
+}
+.rubrik2 {
+    grid-area: rubrik2;
+    text-align:center;
+    font-size:24px;
+}
+.innehall1 {
+    grid-area: innehall1;
+    margin:auto;
+    text-align:left;
+}
+.innehall2 {
+    grid-area: innehall2;
+    margin:auto;
+    text-align:left;
+}
+.chocka {
+    background-color: lightblue;
+    padding:25px;
+}
+.locka {
+    background-color: lightblue;
+    padding:25px;
+}
+
+

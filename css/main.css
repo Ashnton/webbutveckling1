@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: "Esseltube";
+    src: url(https://labb.vgy.se/~antonlm/typsnitt/Esseltube%20W00.ttf) format("truetype");
+}
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffff99;
+    letter-spacing: 50%;
+}
+
+p {
+    font-size:12px;  
+}
+h1 {
+      color:red;
+      font-family: Esseltube;
+      text-align:center;
+}
+strong {
+      font-size:16px;
+  }
+ol {
+      list-style-type: lower-alpha;
+      font-size: 12px;
+}
+img {
+      border-width:2px;
+      border-style:solid;
+}
+.image-div {
+      text-align:center;
+      align-items:center;
+}
+.green {
+      color:green;
+}
+.blue {
+      color:blue;
+}
+.yellow {
+      color:yellow;
+}
+.bild1 {
+    align-items:center;
+}
+.hr2 {
+    margin-left: 0px;
+    width:50%;
+}
+.bg_green {
+    background-color:#00ff00;
+}
+.spec {
+    background-color:red;
+    font-size:16px;
+    font-weight:bold;
+}
+.kod { 
+    font-family:"Courier New", Courier;
+}
+a {
+    display: block;
+    color: #666666;
+    font-size: 16px;
+    text-decoration: none;
+    width:fit-content;
+    padding: 3px;
+}
+a:hover {
+    background-color: aqua;
+    text-decoration: underline;
+}

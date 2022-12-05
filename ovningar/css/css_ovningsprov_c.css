@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Dokument */
+body {
+    background-color:lightpink;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align:center;
+}
+h1 {
+    word-spacing: 50px;
+}
+h1 a {
+    text-decoration: none;
+    color:black;
+    font-size: 24px;
+}
+table {
+    width:500px;
+    margin:auto;
+    text-align: left;
+    border-color: black;
+    border-style:solid;
+    border-width:1px;
+    background-color:aqua;
+    padding:10px;
+}
+td {
+    background-color:lightyellow;
+    color:black;
+    width:217px;
+    border-style: solid;
+    border-width: 1px;
+    padding:10px;
+}
+.gron {
+    background-color:lightgreen;
+}
+.stor-text-tabell {
+    font-size:24px;
+    text-align:center;
+    color:grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.tabell-bild {
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+    height:100px;
+}
+.kalleanka {
+    text-align:right;
+    font-family:'Courier New', Courier, monospace;
+}
+.hoger {
+    text-align:right;
+}
+ul {
+    float:right;
+}
+.botten {
+    vertical-align: bottom;
+    text-decoration:underline;
+    font-size:1em;
+}

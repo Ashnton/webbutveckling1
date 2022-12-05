@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+h1 {
+    text-align:center;
+}
+.tabell1 {
+    margin:auto;
+    border-width:0px;
+    width:300px;
+    text-decoration:underline;
+    font-weight:bold;
+} 
+.tabell2 {
+    margin:auto;
+    border-width:0px;
+    width:600px;
+}
+.tabell3 {
+   margin:auto;
+   width:200px;
+   height:200px; 
+} 
+.uppe {
+    vertical-align:top;
+}
+.nere {
+    vertical-align:bottom;
+}
+.tredjedel {
+    width:33%;
+}
+.bg_red {
+    background-color:red;
+}
+.bg_green {
+    background-color:green;
+}
+.bg_blue {
+    background-color:blue;
+}
+.bg_yellow {
+    background-color:yellow;
+}
+.bg_black {
+    background-color:black;
+}

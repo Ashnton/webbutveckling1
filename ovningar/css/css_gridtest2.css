@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Dokument */
+.grid-container {
+    display: grid;
+    grid-template-columns: 80px 400px 80px;
+    grid-template-areas: 'header header header'
+    'menu content aside'
+    'footer footer aside';
+    grid-template-rows: 60px 200px 60px;
+    background-color: white;
+    padding: 10px;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-content: start;
+}
+
+.grid-header {
+    background-color: yellow;
+    padding: 20px;
+    font-size: 12px;
+    grid-area:header;
+}
+.grid-menu {
+    background-color: blue;
+    padding: 20px;
+    font-size: 12px;
+    grid-area:menu;
+}
+.grid-content {
+    background-color: lightyellow;
+    padding: 20px;
+    font-size: 12px;
+    grid-column:2;
+    grid-area:content;
+}
+.grid-aside {
+    background-color: lightgreen;
+    padding: 20px;
+    font-size: 12px;
+    grid-area:aside;
+}
+.grid-footer {
+    background-color: orangered;
+    padding: 20px;
+    font-size: 12px;
+    grid-area:footer;
+}

@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Dokument */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.grid-container {
+    display:grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-template-areas: 
+    'header header header header header header'
+    'subheader subheader subheader subheader subheader subheader'
+    'jpg jpg gif gif png png'
+    'subheader2 subheader2 subheader2 subheader2 subheader2 subheader2'
+    'wmf wmf wmf svg svg svg'
+    'footer footer footer footer footer footer';
+}
+.grid-header {
+    background-color: grey;
+    padding: 20px;
+    font-size: 24px;
+    border: solid 1px black;
+    grid-area:header;
+    color:white;
+    text-align:center;  
+}
+.grid-subheader {
+    background-color:darkgrey;
+    padding: 20px;
+    font-size: 18px;
+    border: solid 1px black;
+    grid-area:subheader;
+    color:black;
+}
+.grid-subheader2 {
+    background-color:darkgrey;
+    padding: 20px;
+    font-size: 18px;
+    border: solid 1px black;
+    grid-area:subheader2;
+    color:black;
+}
+
+.grid-jpg {
+    background-color: lightgray;
+    padding: 20px;
+    font-size: 12px;
+    border: solid 1px black;
+    color: black;
+    grid-area:jpg;
+}
+.grid-gif {
+    background-color: lightgray;
+    padding: 20px;
+    font-size: 12px;
+    border: solid 1px black;
+    color: black;
+    grid-area:gif;
+}
+.grid-png {
+    background-color: lightgray;
+    padding: 20px;
+    font-size: 12px;
+    color: black;
+    border: solid 1px black;
+    grid-area:png;
+}
+.grid-wmf {
+    background-color: lightgray;
+    padding: 20px;
+    font-size: 12px;
+    color: black;
+    border: solid 1px black;
+    grid-area:wmf;
+}
+.grid-svg {
+    background-color: lightgray;
+    padding: 20px;
+    font-size: 12px;
+    border: solid 1px black;
+    color: black;
+    grid-area:svg;
+}
+.grid-footer {
+    background-color: grey;
+    padding: 20px;
+    font-size: 12px;
+    border: solid 1px black;
+    color: black;
+    grid-area:footer;
+}
+.stor {
+    font-size: 3em;
+}

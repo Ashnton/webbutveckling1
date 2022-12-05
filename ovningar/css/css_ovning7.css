@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Dokument */
+.centreratext {
+    text-align:center;
+    background-color:black;
+    color:yellow;
+    height:3em;
+    width:200px;
+    margin:auto;    
+}
+.centrerabild1 {
+    text-align:center;
+    background-color:lightgray;
+    border-style:solid;
+    height:10em;
+    width:15em;
+    margin:auto;
+    margin-top:3em;
+}
+.centrerabild1 img {
+    width:200px;
+}
+.centrerabild2 {
+    text-align:center;
+    background-color:aquamarine;
+    border-style:dotted;
+    height:8em;
+    width:10em;
+    margin:auto;
+    margin-top:3em;
+    font-size:3em;
+}
+.centrerabild2 img{
+    width:200px;
+    -webkit-filter:grayscale(100%);
+}
+.centrerabild3 {
+    text-align:center;
+    background-color:yellow;
+    width:500px;
+    height:500px;
+    margin:auto;
+    margin-top:3em;
+    border-style:dashed;
+    display:grid;
+    align-items:center;
+    justify-items:center;
+}
+.centrerabild3 img{
+    width:200px;
+    height:200px;
+}
+.centreradiv {
+    text-align:center;
+}
