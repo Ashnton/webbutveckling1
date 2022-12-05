@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Dokument */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.grid-container {
+    display: grid;
+    width: 600px;
+    grid-template-columns: 600px;
+    grid-template-areas: 
+    'header'
+    'menu'
+    'content'
+    'footer'
+    ;
+    background-color: white;
+    margin: auto;
+    border: solid black 1px;
+}
+.grid-header {
+    grid-area: header;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.grid-menu {
+    grid-area: menu;
+    height: 2em;
+    padding-top: 2em;
+    padding-left: 1em;
+    background-color: grey;
+}
+.grid-content {
+    grid-area: content;
+    background-color: white;
+    margin-left: 1em;
+}
+.grid-footer {
+    grid-area: footer;
+    background-color: grey;
+    text-align: center;
+}
+.grid-menu a {
+    padding: 1em;
+    border: solid black 1px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+}
+a:hover {
+    background-color: white;
+    color: black;
+}
+a#current{
+    background-color: white;
+    color: black;
+}
