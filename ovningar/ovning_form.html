@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+      <meta charset="utf-8">
+      <title>Anton Lidströms övningar</title>
+      <link href="css/css_ovning_form.css" rel="stylesheet">
+</head>
+<body>
+    <div class="laxa">
+        <form method="post" action="https://www.bestonline.se/formripper//rippform.php">
+                <h1 class="center">
+                    Skicka läxa
+                </h1>
+                <fieldset>
+                    <legend>Ämne</legend>
+                    <input type="text" size="20" name="Ämne" autofocus required>
+                </fieldset>
+                <fieldset>
+                    <legend>Viktighetsgrad</legend>
+                    <input type="radio" name="Viktighetsgrad" value="Superviktigt">Superviktigt<br>
+                    <input type="radio" name="Viktighetsgrad" value="Viktigt">Viktigt<br>
+                    <input type="radio" name="Viktighetsgrad" value="Akut"><span class="akut">Akut!</span><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Läxa</legend>
+                    <textarea name="Läxa" rows="4" required></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Skicka</button>
+
+                <!-- Sist i formuläret -->
+                <input type="hidden" name="s_email" value="antonlm@varmdogymnasium.se">
+                <input type="hidden" name="s_retur" value="https://www.bestonline.se">
+                <input type="password" name="pw" size="10" value="">
+        </form>
+        <form>
+            <fieldset>
+                <legend>Undersökningsformulär (Beskriv dig själv så utförligt du klarar av)</legend>
+                <textarea name="Undersökningsformulär" rows="10" required></textarea>
+            </fieldset>
+        </form>
+    </div>
+      <div id="myfooter">
+        <a href="https://validator.w3.org/unicorn/check?ucn_uri=labb.vgy.se/~antonlm/ovningar/ovning_form&ucn_task=conformance">Unicorn</a>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+              src="//jigsaw.w3.org/css-validator/images/vcss"
+              alt="Valid CSS!">
+          </a>
+      </div>
+
+</body>
+</html>
