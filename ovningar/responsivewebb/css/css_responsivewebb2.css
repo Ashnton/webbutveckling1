@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Dokument */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
+}
+.grid-container {
+    margin: auto;
+    display: grid;
+    grid-template-areas: content;
+    grid-template-columns: 100%;
+    background-color: yellow;
+}
+.rod {
+    background-color: red;
+    border: solid 1px black;
+    font-size: xx-large;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+.gron {
+    background-color: green;
+    border: solid 1px black;
+    font-size: xx-large;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+.bla {
+    background-color: blue;
+    border: solid 1px black;
+    font-size: xx-large;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+/* Sen de nya eller ändrade inställningarna endast för */ 
+/* de taggar, klasser, id:n som behövs */
+/* När skärmen blir mindre än 850px så sätts "container"-bredden till 600px */
+@media screen and (max-width: 1400px){
+	body {
+        background-color: white;
+    }
+    .grid-container {
+		width: 840px;
+        background-color: yellow;
+	}
+}
+/* När skärmen blir mindre än 650px så sätts "container"-bredden till 400px */
+@media screen and (max-width: 840px){
+    body {
+        background-color: grey;
+    }
+    .grid-container {
+        width: 560px; 
+        background-color: yellow;
+    }
+}
+@media screen and (max-width: 560px){
+    body {
+        background-color: lightblue;
+    }
+    .grid-container {
+        width: 300px;
+        background-color: yellow;
+    }
+}
+@media screen and (max-width: 300px){
+    body {
+        background-color: orange;
+    }
+    .grid-container {
+        width: 200px;
+        background-color: yellow;
+    }
+}
