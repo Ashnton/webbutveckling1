@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>Övning 15</title>
+    <style>
+        .bg-red {
+            background-color: red;
+        }
+        .red {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            display: inline-block;
+        }
+        .green {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            display: inline-block;
+        }
+        .blue {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+      <div class="lorem-text" id="lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <button type="button" id="btn-show">Visa</button>
+      <button type="button" id="btn-remove">Dölj</button>
+      
+        <input type="text" id="jstext" placeholder="Skriv här!">
+        <button type="button" id="moveButton">Kopiera</button>
+        <h1 id="jsh1"></h1>
+      <h1 id="header">Webbutveckling är knepigt men kul</h1>
+      <button type="button" id="headerRemove">Visa/dölj</button>
+      <div class="lorem-text" id="lorem-text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <button type="button" id="btn-show-remove">Visa/Dölj</button>
+      
+      <p class="hoverDiv">Anton Lidström</p>
+
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="red"></div>        
+
+      <button id="btn-1">Blå</button>
+      <button id="btn-2">Röd</button>
+      <button id="btn-3">Grön</button>
+      <div id="myfooter">
+        <a href="https://validator.w3.org/unicorn/check?ucn_uri=labb.vgy.se/~antonlm/ovningar/ovning15.html&ucn_task=conformance">Unicorn</a>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+              src="//jigsaw.w3.org/css-validator/images/vcss"
+              alt="Valid CSS!">
+          </a>
+      </div>
+      <script>
+      document.getElementById("lorem-text").style.display = "none";
+      document.getElementById("header").style.display = "none";
+      document.getElementById('btn-show').addEventListener('click', show);
+      document.getElementById('btn-remove').addEventListener('click', remove);
+
+      function show() {
+        document.getElementById("lorem-text").style.display = "block";
+      }
+      function remove() {
+        document.getElementById("lorem-text").style.display = "none";
+      }
+      document.getElementById('moveButton').addEventListener('click', kopieraText);
+
+      function kopieraText() {
+        document.getElementById("jsh1").innerHTML = document.getElementById("jstext").value;
+        document.getElementById("jstext").value = "";
+      }
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script>
+        $("#btn-show-remove").on('click', function () {
+        $("#lorem-text2").toggle("slow");
+        });
+        $("#headerRemove").on('click', function () {
+        $("#header").toggle("slide");
+        });
+        $('.hoverDiv').on('mouseover', function() {
+         $(this).addClass('bg-red');
+        });
+        $('.hoverDiv').on('mouseout', function(){
+         $(this).removeClass('bg-red');
+        });
+      </script>
+      <script>
+        $("#btn-1").on('click', function () {
+            $(".blue").toggle("slow");
+        });
+        $("#btn-2").on('click', function () {
+            $(".red").toggle("slow");
+        });
+        $("#btn-3").on('click', function () {
+            $(".green").toggle("slow");
+        });
+        $('#btn-1').on('mouseover', function() {
+            $(".blue").toggle("slow");
+        });
+        $('#btn-1').on('mouseout', function(){
+         $(".blue").toggle("slow");
+        });
+        $('#btn-2').on('mouseover', function() {
+            $(".red").toggle("slow");
+        });
+        $('#btn-2').on('mouseout', function(){
+         $(".red").toggle("slow");
+        });
+        $('#btn-3').on('mouseover', function() {
+            $(".green").toggle("slow");
+        });
+        $('#btn-3').on('mouseout', function(){
+         $(".green").toggle("slow");
+        });
+      </script>
+</body>
+</html>
