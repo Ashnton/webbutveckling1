@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>trafikljus</title>
+<style>
+body {
+font-family:Calibri, Verdana, Geneva, sans-serif;
+}
+.container {
+background-color: #DDD;
+width:300px;
+margin:auto;
+border:1px solid #aaa;
+padding:10px;
+}
+#bg_red {
+    background-color: red;
+}
+#bg_yellow {
+    background-color: yellow;
+}
+#bg_green {
+    background-color: green;
+}
+#trafikljus {
+    display: none;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h1><img id="trafikljus-gif" src="bilder/trafikljus-start.gif" width="120" height="90" alt="trafikljus">TRAFIKLJUS</h1>
+<button onclick="showHide()">Test av/på</button>
+<div id="trafikljus">
+        <div>
+        <h3>RÖTT STOPP</h3>
+        <p id="bg_red"><button onclick="hide('bg_red')">Stäng</button>Fot på broms, avvakta uppmärksamt <span id="lampRed">{Lamptest}</span>
+        </p>
+        </div>
+        <div>
+        <h3>GULT AVVAKTA</h3>
+        <p id="bg_yellow"><button onclick="hide('bg_yellow')">Stäng</button>Stanna om du hinner. Man ska ej köra på gult <span id="lampYellow">{Lamptest}</span>
+        </p>
+        </div>
+        <div>
+        <h3>GRÖNT KÖR</h3>
+        <p id="bg_green"><button onclick="hide('bg_green')">Stäng</button>Kör på, men skaffa dig info att vägen är klar. <span id="lampGreen">{Lamptest}</span>
+        </p>
+    </div>
+</div>
+</div>
+<script>
+    var status = "hide";
+    let bgBoxes = ["bg_red", "bg_yellow", "bg_green"];
+
+    // Event listeners 
+    document.getElementById('lampRed').addEventListener('mouseenter', () => lampTest('trafikljus-red-blink'));
+    document.getElementById('lampRed').addEventListener('mouseleave', () => lampStop());
+
+    document.getElementById('lampYellow').addEventListener('mouseenter', () => lampTest('trafikljus-yellow-blink'));
+    document.getElementById('lampYellow').addEventListener('mouseleave', () => lampStop());
+
+    document.getElementById('lampGreen').addEventListener('mouseenter', () => lampTest('trafikljus-green-blink'));
+    document.getElementById('lampGreen').addEventListener('mouseleave', () => lampStop());
+
+    function showHide() {
+        if (status === "hide") {
+            document.getElementById("trafikljus").style.display = "block";
+            status = "show";
+            console.log("Visa!");
+            
+            bgBoxes.map(x => {
+                document.getElementById(x).style.display = "block";
+            })
+        }  else if (status === "show") {
+            document.getElementById("trafikljus").style.display = "none";
+            status = "hide";
+            console.log("Ta bort!")
+        }
+    }
+    function hide(data) {
+        console.log(data); 
+        document.getElementById(data).style.display = "none";
+    }
+    function lampTest(data) {
+        console.log(data);
+        document.getElementById("trafikljus-gif").src = "bilder/" + data + ".gif";
+    }
+    function lampStop() {
+        document.getElementById("trafikljus-gif").src = "bilder/trafikljus-start.gif";
+    }
+</script>
+</body>
+</html>

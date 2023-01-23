@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>trafikljus</title>
+<style>
+body {
+font-family:Calibri, Verdana, Geneva, sans-serif;
+}
+.container {
+background-color: #DDD;
+width:300px;
+margin:auto;
+border:1px solid #aaa;
+padding:10px;
+}
+#bg_red {
+    background-color: red;
+}
+#bg_yellow {
+    background-color: yellow;
+}
+#bg_green {
+    background-color: green;
+}
+#trafikljus {
+    display: none;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h1><img src="bilder/trafikljus-start.gif" width="120" height="90" alt="trafikljus">TRAFIKLJUS</h1>
+<button onclick="showHide()">Test av/på</button>
+<div id="trafikljus">
+        <div>
+        <h3>RÖTT STOPP</h3>
+        <p id="bg_red"><button onclick="hide('bg_red')">Stäng</button>Fot på broms, avvakta uppmärksamt
+        </p>
+        </div>
+        <div>
+        <h3>GULT AVVAKTA</h3>
+        <p id="bg_yellow"><button onclick="hide('bg_yellow')">Stäng</button>Stanna om du hinner. Man ska ej köra på gult</p>
+        </div>
+        <div>
+        <h3>GRÖNT KÖR</h3>
+        <p id="bg_green"><button onclick="hide('bg_green')">Stäng</button>Kör på, men skaffa dig info att vägen är klar.</p>
+    </div>
+</div>
+</div>
+<script>
+    var status = "hide";
+    let bgBoxes = ["bg_red", "bg_yellow", "bg_green"];
+    function showHide() {
+        if (status === "hide") {
+            document.getElementById("trafikljus").style.display = "block";
+            status = "show";
+            console.log("Visa!");
+            
+            bgBoxes.map(x => {
+                document.getElementById(x).style.display = "block";
+            })
+        }  else if (status === "show") {
+            document.getElementById("trafikljus").style.display = "none";
+            status = "hide";
+            console.log("Ta bort!")
+        }
+    }
+    function hide(data) {
+        console.log(data); 
+        document.getElementById(data).style.display = "none";
+    }
+</script>
+</body>
+</html>
