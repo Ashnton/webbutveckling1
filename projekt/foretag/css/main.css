@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'article'
+    'footer';
+}
+header {
+    grid-area: header;
+}
+.header {
+    display: flex;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+article {
+    grid-area: article;
+}
+footer {
+    grid-area: footer;
+}
