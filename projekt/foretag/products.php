@@ -13,15 +13,10 @@
             ?>
         </header>
         <article class="content">
-            <div id="gallery-div">
-                <h2 class="text-center">Våra lådor</h2>
-            </div>
-            <div id="about-div">
-                <h2 class="text-center">Om Anton</h2>
-                <p>
-                    En hjärtskärande berättelse om hur Anton gav sig in i lådmarknaden. 
-                </p>
-            </div>
+            <h1>Våra produkter</h1>
+            <?php
+                include 'classes/product-shower.php';
+            ?>
         </article>
         <footer id="footer" class="footer">My footer</footer>
     </div>

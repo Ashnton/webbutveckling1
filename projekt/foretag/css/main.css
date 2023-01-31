@@ -1,5 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .grid-container {
     display: grid;
     grid-template-areas: 
@@ -12,14 +15,39 @@ header {
 }
 .header {
     display: flex;
+
+    background-color: grey;
+    color: white;
+
+    padding-left: 0.5rem;
 }
 .nav {
     display: flex;
     flex-direction: row;
+    column-gap: 2rem;
+
+    font-size: 1.5rem;
 }
 article {
     grid-area: article;
 }
 footer {
     grid-area: footer;
+}
+/* Classes for general use */
+.text-center {
+    text-align: center;
+}
+.no-decoration {
+    text-decoration: none;
+}
+
+/* Text colours */
+.text-white {
+    color: whitesmoke;
+}
+
+/* Hover classes */
+.hover-gold:hover {
+    color: gold;
 }
