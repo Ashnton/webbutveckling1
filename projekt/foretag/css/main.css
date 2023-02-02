@@ -9,6 +9,9 @@ body {
     'header'
     'article'
     'footer';
+    
+    border: solid slategrey 1px;
+    background-color: whitesmoke;
 }
 header {
     grid-area: header;
@@ -16,7 +19,7 @@ header {
 .header {
     display: flex;
 
-    background-color: grey;
+    background-color: slategrey;
     color: white;
 
     padding-left: 0.5rem;
@@ -34,12 +37,17 @@ article {
 footer {
     grid-area: footer;
 }
+
 /* Classes for general use */
 .text-center {
     text-align: center;
 }
 .no-decoration {
     text-decoration: none;
+}
+/* Text sizes */
+.text-header {
+    font-size: clamp(2rem, 5vw, 5rem);
 }
 
 /* Text colours */
@@ -50,4 +58,55 @@ footer {
 /* Hover classes */
 .hover-gold:hover {
     color: gold;
+}
+
+/* Classes for displaying products */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+}
+.product-div {
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    'product-info product-buy';
+
+    background-color: white;
+    border: solid slategrey 0.125rem;
+    padding: 2rem;
+    gap: 2rem;
+
+    display: grid;
+    
+    margin: 1rem;
+
+    max-width: 40%;
+}
+.product-info {
+    grid-area: product-info;
+}
+.product-buy {
+    grid-area: product-buy;
+}
+.btn-buy {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    padding: 1rem;
+
+    background: slategray;
+    color: white;
+
+    border-radius: 0.5rem;
+    border: solid 2px;
+
+    aspect-ratio: 5;
+}
+.btn-buy:hover {
+    background: steelblue;
+    transition: ease 250ms;
+}
+
+/* Image classes */
+.product-image-preview {
+    width: 40%;
 }

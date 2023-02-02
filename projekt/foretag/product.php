@@ -13,12 +13,11 @@
             ?>
         </header>
         <article class="content">
-            <h1 class="text-center text-header">Våra produkter</h1>
-                <div class="product-container">
-                    <?php
-                        include 'classes/product-shower.php';
-                    ?>
-                </div>
+            <div class="product-container">
+                <?php
+                    include 'classes/single-product-displayer.php';
+                ?>
+            </div>
         </article>
         <footer id="footer" class="footer">My footer</footer>
     </div>

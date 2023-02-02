@@ -116,5 +116,7 @@
     $box6->set_description('För dig som vill ha utökad spänning i vardagen.');
     $box7->set_description('En virtuell låda för den trångbodde.');
 
+    // $box1->set_image("bilder/box.jpg");
+
     $boxes = [$box1, $box2, $box3, $box4, $box5, $box6, $box7];
 ?>
