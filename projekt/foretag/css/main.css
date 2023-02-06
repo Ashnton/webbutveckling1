@@ -1,5 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
+* {
+    margin: 0px;
+    padding: 0px;
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -22,14 +26,18 @@ header {
     background-color: slategrey;
     color: white;
 
-    padding-left: 0.5rem;
+    padding: 0.5rem;
+    justify-content: space-between;
 }
 .nav {
     display: flex;
     flex-direction: row;
-    column-gap: 2rem;
 
     font-size: 1.5rem;
+    gap: clamp(1rem, 5vw, 5rem);
+}
+ul li {
+    list-style-type: none;
 }
 article {
     grid-area: article;
@@ -74,6 +82,8 @@ footer {
 
     background-color: white;
     border: solid slategrey 0.125rem;
+    border-radius: 5px;
+
     padding: 2rem;
     gap: 2rem;
 
@@ -82,6 +92,9 @@ footer {
     margin: 1rem;
 
     max-width: 40%;
+}
+.product-div:hover {
+    box-shadow: 2rem black;
 }
 .product-info {
     grid-area: product-info;
@@ -109,4 +122,13 @@ footer {
 /* Image classes */
 .product-image-preview {
     width: 40%;
+}
+
+@media screen and (max-width: 40rem) {
+    .product-div {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        'product-info'
+        'product-buy';
+    }
 }

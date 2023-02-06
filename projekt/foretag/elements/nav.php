@@ -1,5 +1,5 @@
 <div>
-    <h1>Antons lådor</h1>
+    <h1 class="header-name">Antons lådor</h1>
 </div>
 <nav>
     <ul class="nav">

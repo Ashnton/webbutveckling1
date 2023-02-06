@@ -1,0 +1,89 @@
+body {
+    background-color: maroon;   
+    padding: 30px;
+}
+.grid-container {
+    height: 500px;
+    width: 800px;
+    padding: 10px;
+    background-color: grey;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr ;
+    grid-template-areas: 
+    'header header header'
+    'section article aside'
+    'footer footer footer';
+
+}
+header {
+    grid-area: header;
+
+    background-color: blue;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 10px;
+}
+header img {
+    width: 65px;
+    padding: 10px;
+}
+header img#current1 {
+    border: solid 4px black;
+}
+section {
+    grid-area: section;
+}
+article {
+    grid-area: article;
+    position: relative;
+
+    margin: auto;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+article img {
+    width: 300px;
+}
+#current2 {
+    position: relative;
+    border: solid 10px black;
+    margin: auto;
+
+    z-index: 3;
+}
+#kindacurrent {
+    position: absolute;
+    z-index: 2;
+
+    top: 1rem;
+    left: 7rem;
+}
+#notsocurrent {
+    position: absolute;
+    z-index: 1;
+
+    top: 2rem;
+    left: -6rem;
+}
+aside {
+    grid-area: aside;
+}
+.aside {
+    background-image: url("../bilder/Stone12.gif");
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+footer {
+    grid-area: footer;
+    
+    color: white;
+    background-color: blue;
+    text-align: center;
+}
