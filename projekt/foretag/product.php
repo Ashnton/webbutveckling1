@@ -21,5 +21,6 @@
         </article>
         <footer id="footer" class="footer">My footer</footer>
     </div>
+    <script src="js/addToCart2.js"></script>
 </body>
 </html>

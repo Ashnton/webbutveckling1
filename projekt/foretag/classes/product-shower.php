@@ -24,7 +24,7 @@
             echo ' mm</p>';
             echo '</div>';
             echo '<div class="product-buy">';
-            echo '<button class="btn-buy">Köp</button>';
+            echo '<button productId="'.$count.'" class="btn-buy">Köp</button>';
             echo '<h3 class="product-price">Pris: ';
             echo $box->price;        
             echo ' kr</h3>';
