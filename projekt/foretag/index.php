@@ -13,8 +13,15 @@
             ?>
         </header>
         <article class="content">
+            <h1 class="text-header">Antons lådor</h1>
+            <h2>Marknadens bästa lådor</h2>
+
             <div id="gallery-div">
                 <h2 class="text-center">Våra lådor</h2>
+                
+                <?php 
+                    include 'classes/box-shower.php';
+                ?>
             </div>
             <div id="about-div">
                 <h2 class="text-center">Om Anton</h2>

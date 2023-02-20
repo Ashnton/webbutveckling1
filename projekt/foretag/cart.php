@@ -13,12 +13,12 @@
             ?>
         </header>
         <article class="content">
-            <div class="product-container">
+            <div class="product-container" id="cart-container">
                 
             </div>
         </article>
         <footer id="footer" class="footer">My footer</footer>
     </div>
-    <script src="js/displayCart.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@
 }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 .grid-container {
     display: grid;
@@ -16,18 +17,21 @@ body {
     
     border: solid slategrey 1px;
     background-color: whitesmoke;
+    
 }
 header {
     grid-area: header;
 }
 .header {
     display: flex;
-
+    
     background-color: slategrey;
     color: white;
-
+    
     padding: 0.5rem;
     justify-content: space-between;
+
+    padding-inline: 1rem;
 }
 .nav {
     display: flex;
@@ -41,9 +45,12 @@ ul li {
 }
 article {
     grid-area: article;
+    padding-inline: 1rem;
 }
 footer {
     grid-area: footer;
+
+    padding-inline: 1rem;
 }
 
 /* Classes for general use */
@@ -93,9 +100,7 @@ footer {
 
     max-width: 40%;
 }
-.product-div:hover {
-    box-shadow: 2rem black;
-}
+
 .product-info {
     grid-area: product-info;
 }
@@ -117,6 +122,20 @@ footer {
 .btn-buy:hover {
     background: steelblue;
     transition: ease 250ms;
+}
+
+/* Classes for displaying products on the startpage */
+.slide {
+    display: none;
+}
+
+/* Classes for styling content */
+.wrapper {
+    margin-inline: auto;
+    max-width: 60rem;
+}
+.wrapper p {
+    margin-bottom: 1rem;
 }
 
 /* Image classes */

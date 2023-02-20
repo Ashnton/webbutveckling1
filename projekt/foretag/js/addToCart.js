@@ -2,33 +2,33 @@ let buttons = document.getElementsByClassName("btn-buy");
 
 for (let i = 0; i < buttons.length; i++) {
     let button = buttons[i];
-    let product = button.id
-
+    let product = button.id;
     
     button.addEventListener("click", () => {
-        if (localStorage.getItem("cart") != null) {
+        let cartContent = [];
+        if (localStorage.getItem("cart") !== null) {
             let cart = localStorage.getItem("cart");
             cartContent = JSON.parse(cart);
-        } else {
-            let i = 0
+        }
+
+        let found = false;
+        for (let j = 0; j < cartContent.length; j++) {
+            if (cartContent[j].name === product) {
+                cartContent[j].amount++;
+                found = true;
+                break;
+            }
+        }
+
+        if (!found) {
             let item = {
                 name: product,
-                amount:i++
-            }
-            let cartContent = [item];
+                amount: 1
+            };
+            cartContent.push(item);
         }
-            if (cartContent.includes(product) === false) {
-                cartContent.push(product);
-            }
 
-            items = cartContent.forEach(item => {
-                if (item === product) {
-                    product.amount++;
-                }
-            });
-
-            cartContent = JSON.stringify(items);
-        localStorage.setItem("cart", cartContent);
+        localStorage.setItem("cart", JSON.stringify(cartContent));
         console.log(product);
     });
 }
