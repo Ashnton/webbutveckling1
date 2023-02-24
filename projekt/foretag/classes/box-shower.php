@@ -1,7 +1,7 @@
 <?php
     include 'products.php';
 
-    foreach($result as $info) {
+    foreach($boxes as $info) {
             $oID = $info['id'];
             $slideID = $slideID + 1;
 
