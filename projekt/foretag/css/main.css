@@ -17,7 +17,6 @@ body {
     
     border: solid slategrey 1px;
     background-color: whitesmoke;
-    
 }
 header {
     grid-area: header;
@@ -47,6 +46,11 @@ article {
     grid-area: article;
     padding-inline: 1rem;
 }
+
+p {
+    margin-block: 1rem;
+}
+
 footer {
     grid-area: footer;
 
@@ -60,6 +64,25 @@ footer {
 .no-decoration {
     text-decoration: none;
 }
+.product-div.hide {
+    display: none;
+}
+
+
+/* Classes for general buttons */
+.btn-primary {
+    background-color: slategrey;
+
+    border-radius: 5px;
+    font-size: 1rem;
+
+    padding: 0.5rem;
+}
+.btn-primary:hover {
+    background-color: steelblue;
+    transition: ease 400ms;
+}
+
 /* Text sizes */
 .text-header {
     font-size: clamp(2rem, 5vw, 5rem);
@@ -127,6 +150,7 @@ footer {
 /* Classes for displaying products on the startpage */
 .slide {
     display: none;
+    margin: auto;
 }
 
 /* Classes for styling content */
@@ -141,6 +165,22 @@ footer {
 /* Image classes */
 .product-image-preview {
     width: 40%;
+}
+
+/* For footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    background-color: slategray;
+    color: white;
+
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.footer a {
+    display: block;
 }
 
 @media screen and (max-width: 40rem) {

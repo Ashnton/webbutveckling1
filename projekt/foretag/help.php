@@ -22,7 +22,11 @@
                 <p>Om du har bevis för att lådan anlände i ofullständigt skick kan du får köpa en ny till halva priset.</p>
             </div>
         </article>
-        <footer id="footer" class="footer">My footer</footer>
+        <footer id="footer" class="footer">
+            <?php
+                include 'elements/footer.php';
+            ?>
+        </footer>
     </div>
 </body>
 </html>

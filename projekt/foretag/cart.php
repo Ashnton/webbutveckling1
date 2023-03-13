@@ -17,7 +17,11 @@
                 
             </div>
         </article>
-        <footer id="footer" class="footer">My footer</footer>
+        <footer id="footer" class="footer">
+            <?php
+                include 'elements/footer.php';
+            ?>
+        </footer>
     </div>
     <script src="js/cart.js"></script>
 </body>

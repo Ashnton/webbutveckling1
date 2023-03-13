@@ -1,10 +1,12 @@
-// JavaScript goes here
-const slide1 = document.getElementById('slide1');
-const slide2 = document.getElementById('slide2');
-const slide3 = document.getElementById('slide3');
-const slide4 = document.getElementById('slide4');
+// Fetches the amount of slides to loop through
+const slideAmount = document.getElementById("front-products-header").getAttribute("slideAmount");
+let slides = []; 
 
-let slides = [slide1, slide2, slide3, slide4];
+for (let i = 0; i < slideAmount; i++) {
+  slides[i] = document.getElementById('slide' + (i+1));
+}
+
+// for looping through the slides
 let currentSlide = 1
 slides[0].style.display = "block";
 

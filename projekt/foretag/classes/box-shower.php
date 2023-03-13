@@ -1,16 +1,38 @@
 <?php
-    include 'products.php';
+    // include 'products.php';
+    include 'products-system.php';
 
-    foreach($boxes as $info) {
-            $oID = $info['id'];
+    $slideID = 0;
+    $productAmount = count($boxes);
+
+    echo '<h2 id="front-products-header" slideAmount="'.$productAmount.'" class="text-center">Våra lådor</h2>';
+    foreach($boxes as $box) {
             $slideID = $slideID + 1;
+            $productURL = "'product.php?box=box".$slideID."'";
 
-            echo' <div class="slide" id="slide'.$slideID.'"><div class="front-openings">
-            <div class="opening">
-                '.$info["name"].'
-            </div>
-            </div>
-            </div>
-            </div>';
-            }
+            echo '<div class="product-div slide" id="slide'.$slideID.'" onclick="window.location.href='.$productURL.'">';
+            echo '<div class="product-info">';
+            echo '<img class="product-image-preview" src="bilder/box1.jpg">';
+            echo '<h1 class="product-title">';
+            echo $box->name;
+            echo '</h1>';
+            echo '<p class="product-description">';
+            echo $box->description;
+            echo '</p>';
+            echo '<p class="product-dimensions">Mått: ';
+            echo $box->width;
+            echo '*';
+            echo $box->depth;
+            echo '*';
+            echo $box->height;
+            echo ' mm</p>';
+            echo '</div>';
+            echo '<div class="product-buy">';
+            echo '<button productId="'.$slideID.'" class="btn-buy">Köp</button>';
+            echo '<h3 class="product-price">Pris: ';
+            echo $box->price;        
+            echo ' kr</h3>';
+            echo '</div>';
+            echo '</div>';
+    }
 ?>

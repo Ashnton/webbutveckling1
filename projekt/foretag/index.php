@@ -17,20 +17,48 @@
             <h2>Marknadens bästa lådor</h2>
 
             <div id="gallery-div">
-                <h2 class="text-center">Våra lådor</h2>
-                
                 <?php 
                     include 'classes/box-shower.php';
                 ?>
             </div>
-            <div id="about-div">
+            <div id="about-div" class="wrapper">
                 <h2 class="text-center">Om Anton</h2>
                 <p>
-                    En hjärtskärande berättelse om hur Anton gav sig in i lådmarknaden. 
+                    Anton var en enkel man som levde ett enkelt liv. Han hade alltid drömt om att ha en egen butik, men hans drömmar krossades när hans fru insjuknade i cancer och dog kort därefter. Anton blev ensam och deprimerad, och hans liv förlorade all mening.
                 </p>
+                    
+                <p>
+                    En dag när Anton gick på en promenad, stötte han på en gammal man som satt vid sidan av vägen och sålde lådor. Anton stannade till för att prata med honom och upptäckte att mannen var en pensionerad snickare som hade tagit upp att sälja sina handgjorda lådor som en hobby.
+                </p>
+
+                <p>
+                    Anton köpte en låda och märkte hur den fick honom att känna sig bättre på något sätt. Han började köpa fler lådor och så småningom började han själv göra lådor som en terapi för att hantera sin sorg. Han kunde inte riktigt förklara varför, men själva processen med att skapa något med sina händer gav honom en känsla av mening och tillfredsställelse.
+                </p>
+
+                <p>
+                    En dag bestämde han sig för att försöka sälja några av sina lådor på marknaden, och de sålde snabbt slut. Anton insåg att han kunde ha hittat sin kallelse i livet, och började sälja sina lådor på heltid.
+                </p>
+
+                <p>
+                    Så småningom blev Anton känd som "lådman" i sin stad, och hans lådor blev mycket populära. Han fortsatte att göra lådor som en terapi för sin sorg, men han såg också hur hans butik gav andra människor glädje och mening i deras liv.
+                </p>
+
+                <p>
+                    Anton visste att hans fru alltid hade velat att han skulle följa sina drömmar, och han visste att hon skulle vara stolt över honom. Så, även om hans hjärta fortfarande var trasigt, fortsatte han att göra det han älskade mest - att göra lådor och sälja dem till andra.
+                </p>
+
+
+
+
+
             </div>
         </article>
-        <footer id="footer" class="footer">My footer</footer>
+        <footer id="footer" class="footer">
+            <?php
+                include 'elements/footer.php';
+            ?>
+        </footer>
     </div>
+    <script src="js/gallery.js"></script>
 </body>
 </html>
