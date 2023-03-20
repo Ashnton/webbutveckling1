@@ -17,7 +17,7 @@
             <h1 class="text-center text-header">Jämför produkter</h1>
                 <div class="product-container">
 
-                    <select name="product-picker1" id="product-picker1">
+                    <select name="product-picker1" class="product-picker" id="product-picker1">
                         <?php
                             include 'classes/products-system.php';
 
@@ -30,25 +30,29 @@
                                 echo $name;
                                 echo '</option>';
                             }
-                        ?>
+                            ?>
                     </select>
-                    <select name="product-picker2" id="product-picker2">
+                    
+                    <button class="btn-primary2" id="compare-btn">Jämför</button>
+                    
+                    <select name="product-picker2" class="product-picker" id="product-picker2">
                         <?php
                             $count = 0;
                             foreach ($boxes as $box) {
                                 $name = $box->name;
                                 $count++;
-
+                                
                                 echo '<option value="box'.$count.'">';
                                 echo $name;
                                 echo '</option>';
                             }
                         ?>
                     </select>
-                    <button class="btn-primary" id="compare-btn">Jämför</button>
+                
+                </div>
                     
                     <div class="product-container">
-
+                        
                         <?php
     
                             foreach($boxes as $box) {
@@ -84,7 +88,7 @@
                         ?>
 
                     </div>
-                </div>
+                <!-- </div> -->
         </article>
 
         <footer id="footer" class="footer">

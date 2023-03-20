@@ -3,10 +3,11 @@
 * {
     margin: 0px;
     padding: 0px;
+
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
 }
 .grid-container {
     display: grid;
@@ -29,6 +30,7 @@ header {
     
     padding: 0.5rem;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     padding-inline: 1rem;
 }
@@ -42,19 +44,32 @@ header {
 ul li {
     list-style-type: none;
 }
+
 article {
     grid-area: article;
-    padding-inline: 1rem;
+    min-height: 100vh;
 }
 
 p {
     margin-block: 1rem;
 }
 
+.hero-div {
+    background: url(/projekt/foretag/bilder/boxes.webp) no-repeat;
+    background-size: cover;
+    min-height: 92vh;
+
+    text-align: center;
+}
+.hero-header {
+    text-align: right;
+    margin-inline: 1rem;
+}
+
 footer {
     grid-area: footer;
-
     padding-inline: 1rem;
+
 }
 
 /* Classes for general use */
@@ -77,10 +92,49 @@ footer {
     font-size: 1rem;
 
     padding: 0.5rem;
+    color: white;
 }
 .btn-primary:hover {
     background-color: steelblue;
     transition: ease 400ms;
+}
+.btn-primary2 {
+    background-color: slategrey;
+
+    border-radius: 5px;
+    font-size: 2rem;
+
+    padding: 0.5rem;
+    color: white;
+}
+.btn-primary2:hover {
+    background-color: steelblue;
+    transition: ease 400ms;
+}
+
+.btn-see-more {
+    position: absolute;
+    bottom: 1rem;
+
+    background-color: transparent;
+    color: white;
+
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    cursor: pointer;
+    outline: transparent;
+    
+    font-size: 2rem;
+    padding: 1rem;
+    
+    transition: 300ms ease;
+    transform: translateX(-50%);
+}
+.btn-see-more:hover {
+    border: 1px solid white;
+    opacity: 80%;
+    background-color: #30333f;
 }
 
 /* Text sizes */
@@ -104,6 +158,8 @@ footer {
     flex-wrap: wrap;
 
     justify-content: space-evenly;
+
+    margin-top: 1rem;
 }
 .product-div {
     grid-template-columns: 60% 40%;
@@ -148,6 +204,9 @@ footer {
 }
 
 /* Classes for displaying products on the startpage */
+#gallery-div {
+    margin: 2rem;
+}
 .slide {
     display: none;
     margin: auto;
@@ -162,6 +221,16 @@ footer {
     margin-bottom: 1rem;
 }
 
+/* Classes for compare page */
+.product-picker {
+    font-size: 2rem;
+    text-align: center;
+    width: fit-content;
+
+    border: 1px slategray solid;
+    border-radius: 5px;
+}
+
 /* Image classes */
 .product-image-preview {
     width: 40%;
@@ -172,6 +241,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
     background-color: slategray;
     color: white;
@@ -183,7 +253,7 @@ footer {
     display: block;
 }
 
-@media screen and (max-width: 40rem) {
+@media screen and (max-width: 600px) {
     .product-div {
         grid-template-columns: 100%;
         grid-template-areas: 
