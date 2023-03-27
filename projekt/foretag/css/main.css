@@ -34,12 +34,27 @@ header {
 
     padding-inline: 1rem;
 }
+h1 a{
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+}
 .nav {
     display: flex;
     flex-direction: row;
+    position: relative;
 
     font-size: 1.5rem;
-    gap: clamp(1rem, 5vw, 5rem);
+    gap: clamp(0.5rem, 5vw, 5rem);
+    transform: translateX(0);
+}
+.mobile-nav-icon {
+    display: none;
 }
 ul li {
     list-style-type: none;
@@ -55,7 +70,7 @@ p {
 }
 
 .hero-div {
-    background: url(/~antonlm/projekt/foretag/bilder/boxes.webp) no-repeat;
+    background: url(https://labb.vgy.se/~antonlm/projekt/foretag/bilder/boxes.webp) no-repeat;
     background-size: cover;
     min-height: 92vh;
 
@@ -81,6 +96,11 @@ footer {
 }
 .product-div.hide {
     display: none;
+}
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -130,6 +150,8 @@ footer {
     
     transition: 300ms ease;
     transform: translateX(-50%);
+
+    text-decoration: none;
 }
 .btn-see-more:hover {
     border: 1px solid white;
@@ -137,6 +159,17 @@ footer {
     background-color: #30333f;
 }
 
+.inv-btn {
+    background: transparent;
+    border: none;
+}
+
+.btn-toggle {
+    border: none;
+    background-color: transparent;
+
+    transition: ease-in-out 250ms;
+}
 /* Text sizes */
 .text-header {
     font-size: clamp(2rem, 5vw, 5rem);
@@ -214,14 +247,23 @@ footer {
 
 /* Classes for styling content */
 .wrapper {
-    margin-inline: auto;
+    /* margin-inline: 1rem; */
+    margin: auto;
     max-width: 60rem;
+
+    padding: 1rem;
 }
 .wrapper p {
     margin-bottom: 1rem;
 }
 
 /* Classes for compare page */
+.comparison-select-container {
+    display: grid;
+    grid-template-areas: 'picker1 compare-btn picker2';
+    justify-content: space-evenly;
+
+}
 .product-picker {
     font-size: 2rem;
     text-align: center;
@@ -229,6 +271,16 @@ footer {
 
     border: 1px slategray solid;
     border-radius: 5px;
+}
+/* IDs for the compare inputs */
+#product-picker1 {
+    grid-area: picker1;
+}
+#product-picker2 {
+    grid-area: picker2;
+}
+#compare-btn {
+    grid-area: compare-btn;
 }
 
 /* Image classes */
@@ -253,11 +305,43 @@ footer {
     display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 675px) {
     .product-div {
         grid-template-columns: 100%;
         grid-template-areas: 
         'product-info'
         'product-buy';
+
+        max-width: 100%;
+    }
+    .product-image-preview {
+        width: 100%;
+    }
+
+    .nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+
+        flex-direction: column;
+        padding: 1rem;
+
+        background-color: black;
+        opacity: 80%;
+        padding-top: 5rem;
+
+        transform: translateX(-100%);
+        transition: all 0.5s ease-in-out;
+    }
+    .mobile-nav-icon {
+        display: block;
+    }
+
+    /* Mobile styling for comparison page */
+    .comparison-select-container {
+        grid-template-areas: 'picker1' 'picker2' 'compare-btn';
+        gap: 1rem;
+    
     }
 }

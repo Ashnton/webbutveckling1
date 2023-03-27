@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-      <meta charset="utf-8" />
-      <title>Antons lådor</title>
-      <link href="css/main.css" rel="stylesheet">
+    <?php
+        include 'elements/head.php';
+    ?>
 </head>
 <body>
     <div class="grid-container">
@@ -15,7 +15,7 @@
 
         <article class="content">
             <h1 class="text-center text-header">Jämför produkter</h1>
-                <div class="product-container">
+                <div class="comparison-select-container">
 
                     <select name="product-picker1" class="product-picker" id="product-picker1">
                         <?php
@@ -51,43 +51,43 @@
                 
                 </div>
                     
-                    <div class="product-container">
-                        
-                        <?php
-    
-                            foreach($boxes as $box) {
-                                $slideID = $slideID + 1;
-                                $productURL = "'product.php?box=box".$slideID."'";
+                <div class="product-container">
+                    
+                    <?php
 
-                                echo '<div class="product-div hide" id="box'.$slideID.'" onclick="window.location.href='.$productURL.'">';
-                                echo '<div class="product-info">';
-                                echo '<img class="product-image-preview" src="bilder/box1.jpg">';
-                                echo '<h1 class="product-title">';
-                                echo $box->name;
-                                echo '</h1>';
-                                echo '<p class="product-description">';
-                                echo $box->description;
-                                echo '</p>';
-                                echo '<p class="product-dimensions">Mått: ';
-                                echo $box->width;
-                                echo '*';
-                                echo $box->depth;
-                                echo '*';
-                                echo $box->height;
-                                echo ' mm</p>';
-                                echo '</div>';
-                                echo '<div class="product-buy">';
-                                echo '<button productId="'.$slideID.'" class="btn-buy">Köp</button>';
-                                echo '<h3 class="product-price">Pris: ';
-                                echo $box->price;        
-                                echo ' kr</h3>';
-                                echo '</div>';
-                                echo '</div>';
-                            }
+                        foreach($boxes as $box) {
+                            $slideID = $slideID + 1;
+                            $productURL = "'product.php?box=box".$slideID."'";
 
-                        ?>
+                            echo '<div class="product-div hide" id="box'.$slideID.'" onclick="window.location.href='.$productURL.'">';
+                            echo '<div class="product-info">';
+                            echo '<img class="product-image-preview" src="bilder/box1.jpg">';
+                            echo '<h1 class="product-title">';
+                            echo $box->name;
+                            echo '</h1>';
+                            echo '<p class="product-description">';
+                            echo $box->description;
+                            echo '</p>';
+                            echo '<p class="product-dimensions">Mått: ';
+                            echo $box->width;
+                            echo '*';
+                            echo $box->depth;
+                            echo '*';
+                            echo $box->height;
+                            echo ' mm</p>';
+                            echo '</div>';
+                            echo '<div class="product-buy">';
+                            echo '<button productId="'.$slideID.'" class="btn-buy">Köp</button>';
+                            echo '<h3 class="product-price">Pris: ';
+                            echo $box->price;        
+                            echo ' kr</h3>';
+                            echo '</div>';
+                            echo '</div>';
+                        }
 
-                    </div>
+                    ?>
+
+                </div>
                 <!-- </div> -->
         </article>
 

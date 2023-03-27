@@ -117,12 +117,12 @@
     $box7->set_description('En virtuell låda för den trångbodde.');
 
     $box1->set_image('bilder/box.jpg');
-    $box2->set_image('');
-    $box3->set_image('');
-    $box4->set_image('');
-    $box5->set_image('');
-    $box6->set_image('');
-    $box7->set_image('');
+    $box2->set_image('bilder/box.jpg');
+    $box3->set_image('bilder/box.jpg');
+    $box4->set_image('bilder/box.jpg');
+    $box5->set_image('bilder/box.jpg');
+    $box6->set_image('bilder/box.jpg');
+    $box7->set_image('bilder/box.jpg');
 
     $boxes = [$box1, $box2, $box3, $box4, $box5, $box6, $box7];
 ?>

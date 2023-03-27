@@ -12,7 +12,9 @@
 
             echo '<div class="product-div slide" id="slide'.$slideID.'" onclick="window.location.href='.$productURL.'">';
             echo '<div class="product-info">';
-            echo '<img class="product-image-preview" src="bilder/box1.jpg">';
+            echo '<img class="product-image-preview" src="';
+            echo $box->image;
+            echo '">';
             echo '<h1 class="product-title">';
             echo $box->name;
             echo '</h1>';
