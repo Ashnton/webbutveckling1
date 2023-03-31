@@ -61,7 +61,9 @@
 
                             echo '<div class="product-div hide" id="box'.$slideID.'" onclick="window.location.href='.$productURL.'">';
                             echo '<div class="product-info">';
-                            echo '<img class="product-image-preview" src="bilder/box1.jpg">';
+                            echo '<img class="product-image-preview" src="';
+                            echo $box->image;
+                            echo '" alt="'.$box->name.'">';
                             echo '<h1 class="product-title">';
                             echo $box->name;
                             echo '</h1>';

@@ -10,7 +10,7 @@
             echo '<div class="product-info">';
             echo '<img class="product-image-preview" src="';
             echo $box->image;
-            echo '">';
+            echo '" alt="'.$box->name.'">';
             echo '<h1 class="product-title">';
             echo $box->name;
             echo '</h1>';

@@ -18,6 +18,7 @@ for (let i = 0; i < cart.length; i++) {
     item.amount++;
     localStorage.setItem("cart", JSON.stringify(cart));
     cartItem.innerHTML = item.name + " - " + item.amount;
+    window.location.reload();
   });
 
   let decreaseButton = document.createElement("button");
@@ -28,6 +29,7 @@ for (let i = 0; i < cart.length; i++) {
       item.amount--;
       localStorage.setItem("cart", JSON.stringify(cart));
       cartItem.innerHTML = item.name + " - " + item.amount;
+      window.location.reload();
     }
   });
 
@@ -37,6 +39,7 @@ for (let i = 0; i < cart.length; i++) {
     cart.splice(i, 1);
     localStorage.setItem("cart", JSON.stringify(cart));
     cartList.removeChild(cartItem);
+    window.location.reload();
   });
 
   let buttonContainer = document.createElement("div");
@@ -48,4 +51,37 @@ for (let i = 0; i < cart.length; i++) {
   cartList.appendChild(cartItem);
 }
 
-document.body.appendChild(cartList);
+document.getElementById("cart-container").appendChild(cartList);
+
+function addButtons(element, container) {
+  let increaseButton = document.createElement("button");
+  increaseButton.innerHTML = "+";
+  increaseButton.addEventListener("click", () => {
+    let item = cart[i];
+    item.amount++;
+    localStorage.setItem("cart", JSON.stringify(cart));
+    cartItem.innerHTML = item.name + " - " + item.amount;
+    window.location.reload();
+  });
+
+  let decreaseButton = document.createElement("button");
+  decreaseButton.innerHTML = "-";
+  decreaseButton.addEventListener("click", () => {
+    let item = cart[i];
+    if (item.amount > 1) {
+      item.amount--;
+      localStorage.setItem("cart", JSON.stringify(cart));
+      cartItem.innerHTML = item.name + " - " + item.amount;
+      window.location.reload();
+    }
+  });
+
+  let removeButton = document.createElement("button");
+  removeButton.innerHTML = "Remove";
+  removeButton.addEventListener("click", () => {
+    cart.splice(i, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    cartList.removeChild(cartItem);
+    window.location.reload();
+  });
+}

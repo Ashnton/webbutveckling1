@@ -118,11 +118,11 @@
 
     $box1->set_image('bilder/mobilbox.jpg');
     $box2->set_image('bilder/box1.jpg');
-    $box3->set_image('bilder/box1.jpg');
-    $box4->set_image('bilder/box1.jpg');
-    $box5->set_image('bilder/box1.jpg');
-    $box6->set_image('bilder/box1.jpg');
-    $box7->set_image('bilder/box1.jpg');
+    $box3->set_image('bilder/datorbox.jpg');
+    $box4->set_image('bilder/lunchbox.jpg');
+    $box5->set_image('bilder/catbox.jpg');
+    $box6->set_image('bilder/surprisebox.jpg');
+    $box7->set_image('bilder/virtualbox.png');
 
     $boxes = [$box1, $box2, $box3, $box4, $box5, $box6, $box7];
 ?>
