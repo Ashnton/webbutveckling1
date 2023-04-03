@@ -1,4 +1,5 @@
-document.getElementById("compare-btn").addEventListener("click", compareProducts);
+document.getElementById("product-picker1").addEventListener("change", compareProducts);
+document.getElementById("product-picker2").addEventListener("change", compareProducts);
 
 function compareProducts() {
     const productDivs = document.getElementsByClassName("product-div");

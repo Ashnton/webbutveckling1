@@ -23,7 +23,7 @@
             echo ' mm</p>';
             echo '</div>';
             echo '<div class="product-buy">';
-            echo '<button class="btn-buy" id="'.$box->name.'">Köp</button>';
+            echo '<button class="btn-buy" id="'.$box->name.'" productPrice="'.$box->price.'">Köp</button>';
             echo '<h3 class="product-price">Pris: ';
             echo $box->price;        
             echo ' kr</h3>';

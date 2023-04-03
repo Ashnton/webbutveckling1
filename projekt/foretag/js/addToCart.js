@@ -3,6 +3,7 @@ let buttons = document.getElementsByClassName("btn-buy");
 for (let i = 0; i < buttons.length; i++) {
     let button = buttons[i];
     let product = button.id;
+    let productPrice = button.getAttribute("productPrice");
     
     button.addEventListener("click", () => {
         let cartContent = [];
@@ -11,19 +12,20 @@ for (let i = 0; i < buttons.length; i++) {
             cartContent = JSON.parse(cart);
         }
 
-        let found = false;
+        let existsInCart = false;
         for (let j = 0; j < cartContent.length; j++) {
             if (cartContent[j].name === product) {
                 cartContent[j].amount++;
-                found = true;
+                existsInCart = true;
                 break;
             }
         }
 
-        if (!found) {
+        if (!existsInCart) {
             let item = {
                 name: product,
-                amount: 1
+                amount: 1,
+                price: productPrice
             };
             cartContent.push(item);
         }

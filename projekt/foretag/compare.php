@@ -33,8 +33,6 @@
                             ?>
                     </select>
                     
-                    <button class="btn-primary2" id="compare-btn">Jämför</button>
-                    
                     <select name="product-picker2" class="product-picker" id="product-picker2">
                         <?php
                             $count = 0;

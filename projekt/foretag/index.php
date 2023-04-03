@@ -36,7 +36,7 @@
                 ?>
             </div>
             <div id="about-div" class="wrapper">
-                <h2 class="text-center">Om Anton</h2>
+                <h2 class="subheading">Om Anton</h2>
                 <p>
                     Anton var en enkel man som levde ett enkelt liv. Han hade alltid drömt om att ha en egen butik, men hans drömmar krossades när hans fru insjuknade i cancer och dog kort därefter. Anton blev ensam och deprimerad, och hans liv förlorade all mening.
                 </p>

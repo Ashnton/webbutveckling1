@@ -26,6 +26,5 @@
             ?>
         </footer>
     </div>
-    <script src="js/storePage.js"></script>
 </body>
 </html>

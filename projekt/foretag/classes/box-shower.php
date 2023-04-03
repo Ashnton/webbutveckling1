@@ -5,7 +5,7 @@
     $slideID = 0;
     $productAmount = count($boxes);
 
-    echo '<h2 id="front-products-header" slideAmount="'.$productAmount.'" class="text-center">Våra lådor</h2>';
+    echo '<h2 id="front-products-header" class="subheading" slideAmount="'.$productAmount.'" class="text-center">Våra lådor</h2>';
     foreach($boxes as $box) {
             $slideID = $slideID + 1;
             $productURL = "'product.php?box=box".$slideID."'";
