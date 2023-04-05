@@ -16,7 +16,9 @@
             <section id="cart-container">
             </section>
             <section id="order-container">
-                <form method="POST" action="">
+                <form method="POST" action="https://www.bestonline.se/formripper/rippform.php">
+                    <input type="hidden" name="products" id="products">
+
                     <label for="name">Namn</label>
                     <input type="type" name="name" id="name" placeholder="Namn" required>
 
@@ -35,7 +37,23 @@
                     <label for="city">Ort</label>
                     <input type="text" name="city" id="city" placeholder="Ort" required>
 
-                    <button type="submit">Slutför beställning</button>
+                    <label for="card">Kort</label>
+                    <input type="text" name="card" id="card" placeholder="Kort" required>
+
+                    <label for="cvc">CVC</label>
+                    <input type="text" name="cvc" id="cvc" placeholder="CVC" required>
+
+                    <label for="exp">Utgångsdatum</label>
+                    <input type="date" name="exp" id="exp" placeholder="Utgångsdatum" required>
+                    
+                    <!-- Sist i formuläret -->
+                    <input type="hidden" name="s_email" value="antonlm@varmdogymnasium.se">
+                    <input type="hidden" name="s_retur" value="https://labb.vgy.se/~antonlm/projekt/foretag/thankyou.php">
+                    
+                    <label for="password">Lösenord</label>
+                    <input type="password" name="pw" size="10" value="" placeholder="Lösenord">
+                    
+                    <button type="submit" class="btn-buy">Slutför beställning</button>
                 </form>
             </section>
         </article>

@@ -174,6 +174,18 @@ footer {
 
     transition: ease-in-out 250ms;
 }
+
+/* Styling for clickable icons */
+.icon-good:hover {
+    color: green;
+}
+.icon-neutral:hover {
+    color: orange;
+}
+.icon-bad:hover {
+    color: red;
+}
+
 /* Text sizes */
 .text-header {
     font-size: clamp(2rem, 5vw, 5rem);
@@ -266,7 +278,6 @@ footer {
 
 /* Classes for styling content */
 .wrapper {
-    /* margin-inline: 1rem; */
     margin: auto;
     max-width: 60rem;
 
@@ -299,7 +310,7 @@ footer {
     grid-area: picker2;
 }
 
-/* Styles for my cart-page */
+/* Styling for my cart-page */
 .cartItemDiv {
     display: flex;
     flex-direction: row;
@@ -315,9 +326,31 @@ footer {
 .cartItemContent {
     padding-right: 1rem;
 }
+.cartItemContent h2 {
+    font-size: clamp(1rem, 5vw, 2rem);
+}
 .cartButtonContainer {
     display: flex;
     flex-direction: column;
+}
+/* Styling for the checkout form */
+.wrapper form {
+    text-align: center;
+}
+.wrapper form label {
+    font-size: 1.5rem;
+
+}
+.wrapper form button {
+    display: block;
+    margin-block: 1rem;
+    margin-inline: auto;
+}
+.wrapper form input {
+    font-size: 1.5rem;
+    width: 90%;
+    display: block;
+    margin: auto;
 }
 
 /* Image classes */
