@@ -1,5 +1,5 @@
 // Fetches the amount of slides to loop through
-const slideAmount = document.getElementById("front-products-header").getAttribute("slideAmount");
+const slideAmount = document.getElementById("front-products-header").getAttribute("data-slideAmount");
 let slides = []; 
 
 for (let i = 0; i < slideAmount; i++) {

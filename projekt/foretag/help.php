@@ -24,7 +24,7 @@
                         </svg>
                     </button>
                 </div>
-                <p id="answer1" visible="1">Din låda kommer inom tre till fyra helgdagar, om din låda ej anlänt läser du denna texten igen.</p>
+                <p id="answer1" data-visible="1">Din låda kommer inom tre till fyra helgdagar, om din låda ej anlänt läser du denna texten igen.</p>
                 
                 <div class="flex-between">
                     <h2>Min låda var sönder, kan jag få en ny?</h2>
@@ -35,7 +35,7 @@
                         </svg>
                     </button>
                 </div>
-                <p id="answer2" visible="1">Om du har bevis för att lådan anlände i ofullständigt skick kan du får köpa en ny till halva priset.</p>
+                <p id="answer2" data-visible="1">Om du har bevis för att lådan anlände i ofullständigt skick kan du får köpa en ny till halva priset.</p>
 
                 <div class="flex-between">
                     <h2>Hur många lådor får jag köpa?</h2>
@@ -46,7 +46,7 @@
                         </svg>
                     </button>
                 </div>
-                <p id="answer3" visible="1">Du får köpa så många lådor som du har råd med.</p>
+                <p id="answer3" data-visible="1">Du får köpa så många lådor som du har råd med.</p>
 
                 <div class="flex-between">
                     <h2>Hur länge har ni sålt lådor?</h2>
@@ -57,7 +57,7 @@
                         </svg>
                     </button>
                 </div>
-                <p id="answer4" visible="1">Vi har sålt lådor sedan 2013.</p>
+                <p id="answer4" data-visible="1">Vi har sålt lådor sedan 2013.</p>
 
                 <div class="flex-between">
                     <h2>Har ni många femstjärniga recensioner?</h2>
@@ -68,8 +68,36 @@
                         </svg>
                     </button>
                 </div>
-                <p id="answer5" visible="1">Vi har 100% nöjda kunder.</p>
+                <p id="answer5" data-visible="1">Vi har 100% nöjda kunder.</p>
             </section>
+
+            <section class="wrapper">
+                <h2 class="subheading">Fler frågor? Kontakta oss!</h2>
+
+                <form method="POST" action="https://www.bestonline.se/formripper/rippform.php">
+                    <label for="name">Namn</label>
+                    <input type="text" name="name" id="name" placeholder="Förnamn Efternamn">
+
+                    <label for="email">E-postadress</label>
+                    <input type="email" name="email" id="email" placeholder="E-postadress">
+
+                    <label for="subject">Ämne</label>
+                    <input type="text" name="subject" id="subject" placeholder="Ämne">
+
+                    <label for="message">Meddelande</label>
+                    <textarea name="message" id="message" placeholder="Meddelande"></textarea>
+
+                    <label for="pw">Lösenord</label>
+                    <input type="password" name="pw" id="pw" size="10" value="" placeholder="Lösenord">
+                    
+                    <button type="submit" class="btn-buy">Skicka meddelande</button>
+                    
+                    <!-- Sist i formuläret -->
+                    <input type="hidden" name="s_email" value="antonlm@varmdogymnasium.se">
+                    <input type="hidden" name="s_retur" value="https://labb.vgy.se/~antonlm/projekt/foretag/help.php">
+                </form>
+            </section>
+
         </article>
         <footer id="footer" class="footer">
             <?php

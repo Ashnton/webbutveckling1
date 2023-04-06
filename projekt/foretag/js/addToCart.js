@@ -3,7 +3,7 @@ let buttons = document.getElementsByClassName("btn-buy");
 for (let i = 0; i < buttons.length; i++) {
     let button = buttons[i];
     let product = button.id;
-    let productPrice = button.getAttribute("productPrice");
+    let productPrice = button.getAttribute("data-productPrice");
     
     button.addEventListener("click", () => {
         let cartContent = [];
@@ -31,6 +31,10 @@ for (let i = 0; i < buttons.length; i++) {
         }
 
         localStorage.setItem("cart", JSON.stringify(cartContent));
-        console.log(product);
+
+        document.getElementById(product).innerText = "Tillagd";
+        setTimeout(function () {
+            document.getElementById(product).innerText = "Köp";
+        }, 5000)
     });
 }

@@ -5,7 +5,7 @@
     $slideID = 0;
     $productAmount = count($boxes);
 
-    echo '<h2 id="front-products-header" class="subheading" slideAmount="'.$productAmount.'" class="text-center">Våra lådor</h2>';
+    echo '<h2 id="front-products-header" class="subheading text-center" data-slideAmount="'.$productAmount.'">Våra lådor</h2>';
     foreach($boxes as $box) {
             $slideID = $slideID + 1;
             $productURL = "'product.php?box=box".$slideID."'";
@@ -15,9 +15,9 @@
             echo '<img class="product-image-preview" src="';
             echo $box->image;
             echo '" alt="'.$box->name.'">';
-            echo '<h1 class="product-title">';
+            echo '<h2 class="product-title">';
             echo $box->name;
-            echo '</h1>';
+            echo '</h2>';
             echo '<p class="product-description">';
             echo $box->description;
             echo '</p>';
@@ -30,7 +30,7 @@
             echo ' mm</p>';
             echo '</div>';
             echo '<div class="product-buy">';
-            echo '<button productId="'.$slideID.'" class="btn-buy">Köp</button>';
+            echo '<button data-productId="'.$slideID.'" class="btn-buy">Köp</button>';
             echo '<h3 class="product-price">Pris: ';
             echo $box->price;        
             echo ' kr</h3>';

@@ -13,14 +13,15 @@
             ?>
         </header>
         <article class="content wrapper">
-            <section id="cart-container">
-            </section>
-            <section id="order-container">
+            <h1 class="text-header">Min beställning</h1>
+            <div id="cart-container">
+            </div>
+            <div id="order-container">
                 <form method="POST" action="https://www.bestonline.se/formripper/rippform.php">
                     <input type="hidden" name="products" id="products">
 
                     <label for="name">Namn</label>
-                    <input type="type" name="name" id="name" placeholder="Namn" required>
+                    <input type="text" id="name" name="name" placeholder="Namn" required>
 
                     <label for="email">E-postadress</label>
                     <input type="email" name="email" id="email" placeholder="E-postadress" required>
@@ -44,18 +45,18 @@
                     <input type="text" name="cvc" id="cvc" placeholder="CVC" required>
 
                     <label for="exp">Utgångsdatum</label>
-                    <input type="date" name="exp" id="exp" placeholder="Utgångsdatum" required>
+                    <input type="text" name="exp" id="exp" placeholder="Utgångsdatum" required>
+                    
+                    <label for="pw">Lösenord</label>
+                    <input type="password" name="pw" id="pw" size="10" value="" placeholder="Lösenord">
+                    
+                    <button type="submit" class="btn-buy">Slutför beställning</button>
                     
                     <!-- Sist i formuläret -->
                     <input type="hidden" name="s_email" value="antonlm@varmdogymnasium.se">
                     <input type="hidden" name="s_retur" value="https://labb.vgy.se/~antonlm/projekt/foretag/thankyou.php">
-                    
-                    <label for="password">Lösenord</label>
-                    <input type="password" name="pw" size="10" value="" placeholder="Lösenord">
-                    
-                    <button type="submit" class="btn-buy">Slutför beställning</button>
                 </form>
-            </section>
+            </div>
         </article>
         <footer id="footer" class="footer">
             <?php

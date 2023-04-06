@@ -1,8 +1,8 @@
 <div>
-<h1 class="header-name"><a href="index.php">Antons lådor</a></h1>
+<a href="index.php" class="header-name">Antons lådor</a>
 </div>
 <nav>
-    <ul class="nav" isMyMenuVisible="no">
+    <ul class="nav" data-isMyMenuVisible="no">
         <li><a class="no-decoration text-white hover-gold" href="index.php">Start</a></li>
         <li><a class="no-decoration text-white hover-gold" href="products.php">Våra produkter</a></li>
         <li><a class="no-decoration text-white hover-gold" href="compare.php">Jämför</a></li>

@@ -34,6 +34,11 @@ header {
 
     padding-inline: 1rem;
 }
+.header-name {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
 h1 a{
     color: white;
     text-decoration: none;
@@ -72,13 +77,16 @@ p {
 .hero-div {
     background: url(https://labb.vgy.se/~antonlm/projekt/foretag/bilder/boxes.webp) no-repeat;
     background-size: cover;
-    min-height: 92vh;
+    min-height: 95.5vh;
 
     text-align: center;
 }
 .hero-header {
     text-align: right;
     margin-inline: 1rem;
+}
+.hero-header .text-header {
+    margin: 0;
 }
 
 footer {
@@ -188,6 +196,7 @@ footer {
 
 /* Text sizes */
 .text-header {
+    margin: 1rem;
     font-size: clamp(2rem, 5vw, 5rem);
 }
 
@@ -351,6 +360,15 @@ footer {
     width: 90%;
     display: block;
     margin: auto;
+    padding-inline: 0.5rem;
+}
+.wrapper form textarea {
+    resize: none;
+    width: 90%;
+    height: 6rem;
+    margin: auto;
+
+    padding-inline: 0.5rem;
 }
 
 /* Image classes */
@@ -373,6 +391,16 @@ footer {
 }
 .footer a {
     display: block;
+}
+
+/* CSS animations here */
+@keyframes bounce {
+    to { transform: translateY(15px); }
+}
+
+/* CSS specific classes */
+.bounce {
+    animation: bounce 1s ease-in-out infinite alternate;
 }
 
 @media screen and (max-width: 675px) {
@@ -409,10 +437,18 @@ footer {
         display: block;
     }
 
+    /* Mobile styling for buttons */
+    .btn-buy {
+        width: 100%;
+    }
     /* Mobile styling for comparison page */
     .comparison-select-container {
         grid-template-areas: 'picker1' 'picker2' 'compare-btn';
         gap: 1rem;
-    
+    }
+
+    /* Mobile styling for checkout-page */
+    .cartItemDiv {
+        margin: 0;
     }
 }

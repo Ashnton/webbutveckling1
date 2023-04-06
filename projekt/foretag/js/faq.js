@@ -14,13 +14,13 @@ function toggleSection(index) {
     let elementToToggle = document.getElementById("answer" + index);
     let toggleButton = document.getElementById('toggle_' + index);
 
-    if (elementToToggle.getAttribute("visible") === "1") {
-        elementToToggle.setAttribute("visible", "0");
+    if (elementToToggle.getAttribute("data-visible") === "1") {
+        elementToToggle.setAttribute("data-visible", "0");
         elementToToggle.style.display = "none";
         toggleButton.style.transform = "rotate(90deg)";
         
-    } else if (elementToToggle.getAttribute("visible") === "0") {
-        elementToToggle.setAttribute("visible", "1");
+    } else if (elementToToggle.getAttribute("data-visible") === "0") {
+        elementToToggle.setAttribute("data-visible", "1");
         elementToToggle.style.display = "block";
         toggleButton.style.transform = "rotate(0deg)";
 

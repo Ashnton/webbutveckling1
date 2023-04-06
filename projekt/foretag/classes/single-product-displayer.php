@@ -8,9 +8,9 @@
         echo '<div class="product-div">';
             echo '<div class="product-info">';
             echo '<img class="product-image-preview" src="'.$box->image.'" alt="'.$box->name.'">';
-            echo '<h1 class="product-title">';
+            echo '<h2 class="product-title">';
             echo $box->name;
-            echo '</h1>';
+            echo '</h2>';
             echo '<p class="product-description">';
             echo $box->description;
             echo '</p>';
@@ -23,7 +23,7 @@
             echo ' mm</p>';
             echo '</div>';
             echo '<div class="product-buy">';
-            echo '<button class="btn-buy" id="'.$box->name.'" productPrice="'.$box->price.'">Köp</button>';
+            echo '<button class="btn-buy" id="'.$box->name.'" data-productPrice="'.$box->price.'">Köp</button>';
             echo '<h3 class="product-price">Pris: ';
             echo $box->price;        
             echo ' kr</h3>';
