@@ -22,7 +22,7 @@ strong {
       font-size:16px;
   }
 ol {
-      list-style-type: lower-alpha;
+      list-style-type: decimal;
       font-size: 12px;
 }
 img {

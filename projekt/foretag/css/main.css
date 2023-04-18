@@ -247,7 +247,7 @@ footer {
     font-size: clamp(1.5rem, 5vw, 3rem);
     padding: 1rem;
 
-    background: slategray;
+    background: #4b5762;
     color: white;
 
     border-radius: 0.5rem;
@@ -308,7 +308,7 @@ footer {
     text-align: center;
     width: fit-content;
 
-    border: 1px slategray solid;
+    border: 1px #4b5762 solid;
     border-radius: 5px;
 }
 /* IDs for the compare inputs */
@@ -383,7 +383,7 @@ footer {
     justify-content: space-evenly;
     flex-wrap: wrap;
 
-    background-color: slategray;
+    background-color: #4b5762;
     color: white;
 
     padding-top: 1rem;
@@ -391,6 +391,7 @@ footer {
 }
 .footer a {
     display: block;
+    color: white;
 }
 
 /* CSS animations here */
