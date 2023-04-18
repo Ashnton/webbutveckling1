@@ -41,6 +41,30 @@ body {
     margin-top: 0;
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.subheader {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.info-div {
+    max-width: 30rem;
+    padding: 1rem;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
 @media screen and (max-width: 600px) {
     .header-with-nav a {
         display: block;
