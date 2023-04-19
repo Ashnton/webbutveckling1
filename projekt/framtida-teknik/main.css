@@ -6,6 +6,9 @@ body {
 }
 
 .header-with-nav {
+    position: fixed;
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
 
@@ -21,11 +24,13 @@ body {
     text-decoration: none;
     padding-inline: 0.5rem;
     transition: text-decoration 0.5s ease-in-out;
+
+    margin-right: 1rem;
+
 }
 .header-with-nav a:hover {
     text-decoration: underline;
 }
-
 
 .hero-image {
     background: url(bilder/mars.jpg) no-repeat;
@@ -39,6 +44,7 @@ body {
     text-align: center;
 
     margin-top: 0;
+    padding-top: 5rem;
 }
 
 .flex {
@@ -69,4 +75,25 @@ body {
     .header-with-nav a {
         display: block;
     }
+
+    .nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+    
+        flex-direction: column;
+        padding: 1rem;
+    
+        background-color: black;
+        opacity: 80%;
+        padding-top: 5rem;
+    
+        transform: translateX(-100%);
+        transition: all 0.5s ease-in-out;
+    }
+    .mobile-nav-icon {
+        display: block;
+    }
+    
 }
