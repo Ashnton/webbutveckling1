@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vår startsida</title>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="js/nav.js" defer></script>
+
+    <style>
+        .info-div-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            'intro mars-jorden mars-jorden'
+            'intro mars-jorden mars-jorden '
+            'how syre syre'
+            'likt elektricitet elektricitet'
+            'referens referens referens'
+            ;
+
+            margin: auto;
+            max-width: 70rem;
+        }
+
+        .intro-div {
+            grid-area: intro;
+        }
+
+        .mars-jorden-div {
+            grid-area: mars-jorden;
+        }
+
+        .how-div {
+            grid-area: how;
+        }
+
+        .syre-div {
+            grid-area: syre;
+        }
+
+        .elektricitet-div {
+            grid-area: elektricitet;
+        }
+        .likt-div {
+            grid-area: likt;
+        }
+        .referens-div {
+            grid-area: referens;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <article class="hero-image-debris">
+            
+            <section class="header-with-nav">
+                <header>
+                    BigSpace
+                </header>
+                <nav class="nav" data-isMyMenuVisible="no">
+                    <a href="index.html">Start</a>
+                    <a href="resatillmars.html">Resan till Mars</a>
+                    <a href="marskoloni.html" id="current">Marskoloni</a>
+                    <a href="nedskrapning.html">Nedskräpning</a>
+                    <a href="om-oss">Om oss</a>
+
+                </nav>
+                <button id="myMenuBtn" class="inv-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-list mobile-nav-icon" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+            </section>
+
+            <section>
+                <h1 class="hero-image-h1">Marskolonisation</h1>
+            </section>
+
+            <section class="info-div-grid">
+                <div class="styled-info-container intro-div">
+                    <h2 class="subheader">Introduktion</h2>
+                    <p>
+                        Människan har länge drömt om att bo på en annan planet och Mars verkar vara det bästa alternativet vi har. Tyvärr kan människor inte leva på Mars utan speciell utrustning, och snart är den här. 
+                    </p> 
+                </div>
+
+                <div class="styled-info-container mars-jorden-div">
+                    <h2 class="subheader">Mars på jorden</h2>
+                    <p>
+                        Enligt The Guardian ska NASA testa en Marssimulator som fyra personer kommer att leva i i ett år. Deras boende är 3D-printat och har en luftsluss som leder till en utomhussektion (egentligen inomhus) där de ska utföra olika uppdrag. Dessutom kommer de att ha vr-utrustning och löpband så de “skulle kunna vandra i timmar”. Deras skräp kommer att analyseras för att ta fram ett hållbart skräp som kommer att gå att återvinna eller återanvändas av dem som bor på Mars. Dessutom kommer de ha en simulerad fördröjning av kommunikationen mellan de utanför experimentlokalen. De kommer också att förekomma situationer där deras redskap och utrustning slutar att fungera. Syftet med detta experiment är att testa om människor kan klara av att leva på Mars utan att må psykiskt dåligt, men också för att testa om de kan överleva genom att odla.
+                    </p>
+                </div>
+
+                <div class="styled-info-container how-div">
+                    <h2 class="subheader">Hur vi ska öveleva</h2>
+                    <p>
+                        Planen är att skicka habitat och annat nödvändigt till Mars först, och sedan ca. 26 månader senare skicka de som ska bosätta sig eftersom att det är den optimala tiden att skicka nästa raket. 
+                    </p>
+                </div>
+
+                <div class="styled-info-container syre-div">
+                    <h2 class="subheader">Syre på Mars</h2>
+                    <p>
+                        De som bor på Mars behöver syre, därför har forskare på MIT tagit fram ett experiment som kallas MOXIE (står för: Mars Oxygen In-Situ Resource Utilization Experiment) som fungerar som en bakåtvänd förbränningsmotor. Istället för att bränsle och syre bildar värme och en gas tas gasen och delas upp i bränsle och syre, men det kräver dock elektricitet för att fungera. Med denna uppfinning kan astronauterna leva på Mars under en längre tid utan att dyra raketer behöver skicka syre till dem. Dock är den största fördelen med denna uppfinning att man kan utvinna syre till raketerna som tar människorna tillbaka till jorden. Det är nämligen så att bränslet som används i rymdraketer kräver extremt mycket syre, och om man skulle behöva skicka syre till Mars skulle man inte kunna skicka lika mycket av utrustningen i raketerna vilket skulle leda till att fler behöver skickas och därmed blir projektet dyrare. MOXIE testas just nu på Perseverance för att testa att den även fungerar på Mars. Eftersom att den är på Perseverance kunde den inte vara så stor, men en större variant skulle inte vara svårare att konstruera.                 </div>
+                    </p>
+                </div>
+                <div class="styled-info-container elektricitet-div">
+                    <h2 class="subheader">Elektricitet på Mars</h2>
+                    <p>
+                        Dessutom består nästan 1% av jorden på Mars av ClO4-. ClO4- är giftigt för människor, men när man separerar syret från kloret frigörs stora mängder energi. Detta är perfekt som energikälla eftersom att ClO4 finns i överflöd på Mars. Tyvärr är denna reaktion explosiv och svår att kontrollera. Lyckligtvis finns det däremot bakterier som kan bryta ClO4-molekylerna åt oss vilket låter astronauter på Mars ha oändligt med ström.                </div>
+                    </p>
+                </div>
+                <div class="styled-info-container likt-div">
+                    <h2 class="subheader">Mars är likt jorden</h2>
+                    <p>
+                        Ett Marsdygn är 24h och 37min, och dessutom har Mars årstider precis som jorden, så det kommer nästan att kännas som hemma för de som kommer att bo där.                     </p>
+                </div>
+                <div class="styled-info-container referens-div">
+                    <h2 class="subheader">Referenser</h2>
+                    <p>
+                        The Guardian. (12 april 2023). Inside the 3D-printed box in Texas where humans will prepare for Mars. Theguardian.com <a href="https://www.theguardian.com/science/2023/apr/12/nasa-texas-humans-prepare-Mars">https://www.theguardian.com/science/2023/apr/12/nasa-texas-humans-prepare-Mars</a>
+                        <br>
+                        Georgina Torbet. (30 mars 2021). Artificial atmospheres: mars-jorden we’ll build a base with breathable air on Mars. Digitaltrends.com <a nref="https://www.digitaltrends.com/web/mars-jorden-to-build-a-mars-base-habitat/">https://www.digitaltrends.com/web/mars-jorden-to-build-a-mars-base-habitat/</a>
+                        <br>
+                        Linde, P. (2013). Jakten på liv i universum (1 uppl.). Karavan Förlag
+                    </div>
+            </section>
+
+        </article>
+    
+    </main>
+
+    <footer class="footer">
+        Av: Anton Lidström, Leo WB, Seth Drabble
+    </footer>
+
+</body>
+</html>
