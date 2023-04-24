@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vår startsida</title>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="js/nav.js" defer></script>
+
+    <style>
+        .info-div-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            'intro how how'
+            'intro removedebris removedebris'
+            'clearspace clearspace phasefour'
+            ;
+
+            margin: auto;
+            max-width: 70rem;
+        }
+
+        .intro-div {
+            grid-area: intro;
+        }
+
+        .how-div {
+            grid-area: how;
+        }
+
+        .removedebris-div {
+            grid-area: removedebris;
+        }
+
+        .clearspace-div {
+            grid-area: clearspace;
+        }
+
+        .phasefour-div {
+            grid-area: phasefour;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <article class="hero-image-debris">
+            
+            <section class="header-with-nav">
+                <header>
+                    BigSpace
+                </header>
+                <nav class="nav" data-isMyMenuVisible="no">
+                    <a href="index.html">Start</a>
+                    <a href="">Mars</a>
+                    <a href="">Mars 2</a>
+                    <a href="nedskrapning.html" id="current">Nedskräpning</a>
+                    <a href="">Om oss</a>
+
+                </nav>
+                <button id="myMenuBtn" class="inv-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-list mobile-nav-icon" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+            </section>
+
+            <section>
+                <h1 class="hero-image-h1">Nedskräpning av rymden</h1>
+            </section>
+
+            <section class="info-div-grid">
+                <div class="styled-info-container intro-div">
+                    <h2 class="subheader">Bakgrund</h2>
+                    <p>
+                        Sedan Sovjetunionen skickade upp den första satelliten i omloppsbana 4 oktober 1957 (Tekniska museet, 2023) har ungefär 7500 till skickats upp varav 4300 fortfarande är i omloppsbana och av dessa fungerar endast 1200 stycken (Brunell, 2018).
+                    </p>
+                    <p>
+                        År 2022 fanns det över 30 000 delar rymdskrot vars diameter överstiger tio centimeter i omloppsbana runt jorden (European Space Agency, 2022). Dessutom rör sig skräpet i 28 200 kilometer i timmen vilket innebär att även ett litet objekt kan orsaka stora skador på till exempel en raket som ska ta sig förbi satelliternas omloppsbana (Bergström, 2020).
+                    </p> 
+                </div>
+
+                <div class="styled-info-container how-div">
+                    <h2 class="subheader">Hur löser vi problemet?</h2>
+                    <p>
+                        För att städa rymden utvecklas idag flera teknologier som alla bygger på att ändra skrotets bana för att det ska brinna upp i jordens atmosfär. 
+                    </p>
+
+                    <p>RemoveDEBRIS var ett projekt som genomfördes av Surrey Space Centre tillsammans med Airbus mellan 2018 och 2021 (Wikipedia, hämtat 18/4-2023). Projektet syftade till att demonstrera flera nya teknologier utvecklade för städning av rymden samt att testa effektiviteten hos flera av dessa teknologier på simulerat rymdskrot i låg omloppsbana. </p>
+                </div>
+
+                <div class="styled-info-container removedebris-div">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem vero dolorem sunt vitae cupiditate aliquid dolorum explicabo, excepturi, ipsa laborum minus, tenetur fugit consequatur! Officiis ipsa amet cum natus!
+                </div>
+
+                <div class="styled-info-container clearspace-div">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugit accusantium assumenda perspiciatis recusandae illum corporis praesentium quam eum explicabo, aspernatur reiciendis molestias temporibus molestiae sunt ipsam eligendi dicta soluta?
+                </div>
+
+                <div class="styled-info-container phasefour-div">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro quia deleniti sapiente vitae exercitationem veritatis iste maxime, qui obcaecati est unde, ipsum voluptatem vel. Illum atque soluta nobis tempora laudantium.
+                </div>
+            </section>
+
+        </article>
+    
+    </main>
+
+    <footer class="footer">
+        Av: Anton Lidström, Leo W, Seth Drabble
+    </footer>
+
+</body>
+</html>
