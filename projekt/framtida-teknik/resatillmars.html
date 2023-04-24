@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vår startsida</title>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="js/nav.js" defer></script>
+
+    <style>
+        .info-div-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            'intro how how'
+            'intro removedebris removedebris'
+            'clearspace clearspace phasefour'
+            ;
+
+            margin: auto;
+            max-width: 70rem;
+        }
+
+        .intro-div {
+            grid-area: intro;
+        }
+
+        .how-div {
+            grid-area: how;
+        }
+
+        .removedebris-div {
+            grid-area: removedebris;
+        }
+
+        .clearspace-div {
+            grid-area: clearspace;
+        }
+
+        .phasefour-div {
+            grid-area: phasefour;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <article class="hero-image-debris">
+            
+            <section class="header-with-nav">
+                <header>
+                    BigSpace
+                </header>
+                <nav class="nav" data-isMyMenuVisible="no">
+                    <a href="index.html">Start</a>
+                    <a href="resatillmars.html" id="current">Mars</a>
+                    <a href="">Mars 2</a>
+                    <a href="nedskrapning.html">Nedskräpning</a>
+                    <a href="">Om oss</a>
+
+                </nav>
+                <button id="myMenuBtn" class="inv-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-list mobile-nav-icon" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+            </section>
+
+            <section>
+                <h1 class="hero-image-h1">Resan till Mars</h1>
+            </section>
+
+            <section class="info-div-grid">
+                <div class="styled-info-container intro-div">
+                    <h2 class="subheader">Bakgrund</h2>
+                    <p>
+                        En grundläggande fråga för mänskligheten är att förstå om liv existerar någon annanstans i universum. Att hitta liv utanför jorden skulle förändra vår syn på universum och ge oss en bättre förståelse för hur livet utvecklar sig i universum. 
+
+
+                    </p>
+                    <p>
+                        Resan till Mars är ett av framtidens viktigaste och mest spännande rymduppdrag eftersom Mars är den planet i vårt solsystem som är mest lik jorden. Därför är chansen att hitta utomjordiskt liv högst på Mars vilket är en av många anledningar till att resa till Mars (ESA).
+Dessutom vill vi, utöver att söka efter liv, också utforska planetens geologiska sammansättning samt förbereda oss för framtida mänsklig utforskning.
+                    </p> 
+                </div>
+
+                <div class="styled-info-container how-div">
+                    <h2 class="subheader">Hur ska vi ta oss dit?</h2>
+                    <p>
+                        Att ta sig till Mars har länge varit en dröm för människan och de två stora aktörerna som försöker uppfylla den här drömmen är NASA och framförallt SpaceX (The Conversation, 2020). Med Starship, SpaceX lösning för marsresande, kan denna mänskliga drömmen bli verklighet. 
+                    </p>
+
+                    <p>Starship är ett helt återanvändbart transportsystem gjort för att förflytta mänsklig besättning och last till jordens omloppsbana, månen och Mars (SpaceX, 2022). </p>
+                    <p>Med en enorm längd på 120 meter och en diameter på 9 meter ger den en nyttolastkapacitet på 100-150 metriska ton. Storleken och nyttolastkapaciteten ger Starship en möjlighet att transportera allt från förnödenheter och utrustning till människor som ska kolonisera Mars.</p>
+                    <p>Starship kommer med flera innovativa lösningar till problem som möts under en resa till Mars. Eftersom Starship kommer att tankas i rymden kan rymdskeppet använda sin fulla kapacitet för att forsla besättning och last istället för att behöva bära på bränsle som annars skulle krävts för att nå sin destination. Detta gör resan till Mars mer kostnadseffektiv och snabbare än tidigare rymdresor.</p>
+                </div>
+
+                <div class="styled-info-container removedebris-div">
+                    SpaceX har sagt att de ska försöka få människor till Mars så fort som möjligt men är inte säkra på när. Enligt en tweet av deras VD Elon Musk är 2029 det tidigaste datumet människor först kan kliva på Mars (NDTV, 2023).
+                </div>
+
+                <div class="styled-info-container clearspace-div">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugit accusantium assumenda perspiciatis recusandae illum corporis praesentium quam eum explicabo, aspernatur reiciendis molestias temporibus molestiae sunt ipsam eligendi dicta soluta?
+                </div>
+
+                <div class="styled-info-container phasefour-div">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro quia deleniti sapiente vitae exercitationem veritatis iste maxime, qui obcaecati est unde, ipsum voluptatem vel. Illum atque soluta nobis tempora laudantium.
+                </div>
+            </section>
+
+        </article>
+    
+    </main>
+
+    <footer class="footer">
+        Av: Anton Lidström, Leo W, Seth Drabble
+    </footer>
+
+</body>
+</html>
