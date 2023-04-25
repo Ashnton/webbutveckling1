@@ -96,6 +96,13 @@ img {
     background-color: #30333f;
 }
 
+.btn-toggle {
+    border: none;
+    background-color: transparent;
+
+    transition: ease-in-out 250ms;
+}
+
 .mobile-nav-icon {
     display: none;
 }
@@ -153,12 +160,19 @@ img {
     justify-content: center;
     flex-wrap: wrap;
 }
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .grid {
     display: grid;
 }
 .grid-two-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    place-items: center;
 }
 
 .subheader {
@@ -271,7 +285,6 @@ img {
     .grid-two-columns {
         display: grid;
         grid-template-columns: 1fr;
-        place-items: center;
     }
 
 }
