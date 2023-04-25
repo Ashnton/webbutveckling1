@@ -12,11 +12,13 @@
 <body>
     
     <main>
-        <article class="image-debris fill-screen">
+        <div class="image-debris fill-screen">
             
             <section class="header-with-nav">
                 <header>
-                    BigSpace
+                    <h2>
+                        BigSpace
+                    </h2>
                 </header>
                 <nav class="nav" data-isMyMenuVisible="no">
                     <a href="index.html">Start</a>
@@ -24,8 +26,8 @@
                     <a href="marskoloni.html">Marskoloni</a>
                     <a href="nedskrapning.html" id="current">Nedskräpning</a>
                     <a href="om-oss.html">Om oss</a>
-
                 </nav>
+
                 <button id="myMenuBtn" class="inv-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-list mobile-nav-icon" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
@@ -34,7 +36,7 @@
             </section>
             
             
-            <section style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+            <section class="hero-content-container">
                 <h1 class="hero-image-h1">Nedskräpning av rymden</h1>
                 <a class="btn-see-more bounce" href="#first-section"> 
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-down" id="arrow-down" viewBox="0 0 16 16">
@@ -44,10 +46,10 @@
 
             </section>
         
-        </article>
+        </div>
             
-            <section class="info-div-container fill-screen">
-                <div class="section-div" id="first-section">
+            <div class="info-div-container fill-screen">
+                <section class="section-div" id="first-section">
                     <h2 class="subheader">Bakgrund</h2>
                     <p>
                         <img src="bilder/antons-bilder/graph.jpg" alt="Graf över antalet objekt i omloppsbana runt jorden" class="float-right">
@@ -56,21 +58,21 @@
                     <p>
                         År 2022 fanns det över 30 000 delar rymdskrot vars diameter överstiger tio centimeter i omloppsbana runt jorden (European Space Agency, 2022). Dessutom rör sig skräpet i 28 200 kilometer i timmen vilket innebär att även ett litet objekt kan orsaka stora skador på till exempel en raket som ska ta sig förbi satelliternas omloppsbana (Bergström, 2020).
                     </p> 
-                </div>
+                </section>
 
-                <div class="section-div">
+                <section class="section-div">
                     <h2 class="subheader">Hur löser vi problemet?</h2>
                     <p>
                         <img src="bilder/antons-bilder/adr.jpg" alt="Bild av Active Debris Removal-farkost" class="float-left">
                         För att städa rymden utvecklas idag flera teknologier som alla bygger på att ändra skrotets bana för att det ska brinna upp i jordens atmosfär. Ett flertal aktörer är aktiva inom ADR (Active Debris Removal) idag och det kommer ständigt privata och statliga initiativ. Här nedan har vi beskrivit ett urval av de mest lovande projekten.
                     </p>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <div class="filler-div image-debris"></div>
 
-            <section class="info-div-container">
-                <div class="section-div">
+            <div class="info-div-container">
+                <section class="section-div">
                     <h2 class="subheader">RemoveDEBRIS</h2>
                     <p>
                         <img src="bilder/antons-bilder/removedebris-platform.jpg" alt="Ritning av removeDEBRIS-plattformen" class="float-left">
@@ -78,33 +80,31 @@
                     </p>
                     <p>För att åstadkomma detta var removeDEBRIS-plattformen utrustad med ett nät, en harpun, en laseravståndsmätare, ett dragsegel och två mindre forskningssatelliter. Uppdraget var planerat att pågå i ett och ett halvt år och var i stora drag lyckat men dragseglets misslyckande med att vecklas ut försenade återinträdet med strax över två år. </p>
                     <p>Nätet användes för att fånga in en bit simulerat rymdskrot för att ändra dess bana så att det föll in i jordens atmosfär och brann upp. Laseravståndsmätaren användes tillsammans med plattformens kameror för att få data och bilder för analys och harpunen användes för att avfyra en harpun ansluten i en lina mot en platta placerad på en arm fäst vid plattformen. Slutligen skulle dragseglet vecklas ut för att ta plattformen från sin omloppsbana in i jordens atmosfär för att där sönderfalla. Alla experiment utom det sista lyckades och därför betraktas uppdraget som en framgång.</p>
-                </div>
+                </section>
 
-                <div class="section-div">
+                <section class="section-div">
                     <h2 class="subheader">PhaseFour</h2>
                     <p>
                         <!-- <img src="bilder/antons-bilder/phasefour.jpg" alt="Bild av PhaseFours Maxwell-motor" class="float-right"> -->
                         Ett annat initiativ kommer från företaget Phase Four som vill använda radiovågor för att göra gas till plasma för att i sin tur använda den för att ändra små uttjänta satelliters kurs till att brinna upp i atmosfären (Bergström, 2020). Denna teknologi är enligt Phase Four delvis i bruk idag, åtta av deras framdrivningssystem är idag satta i produktion i omloppsbana kring jorden.
                     </p>    
-                </div>
+                </section>
 
-                <div class="section-div">
+                <section class="section-div">
                     <h2 class="subheader">ClearSpace-1</h2>
                     <p>
                         <img src="bilder/antons-bilder/clearspace.png" alt="Visionsbild av ClearSpace-1-modulen" class="float-right">
                         Ett tredje initiativ för att städa rymden kommer från ESA som inom ramarna av uppdraget ClearSpace-1 för första gången autonomt ska plocka ner en satellit från omloppsbana på ett säkert sätt. Trots att projektet leds av ESA har de lejt ut utförandet av uppdraget till den schweiziska start-up:en ClearSpace SA för att demonstrera teknologin och etablera en kommersiell sektor inom rymdstädning. Planen är att skjuta upp modulen år 2026 och då påbörja städningen av rymden. (European Space Agency, hämtat 19/4-2023)
                     </p>
-                </div>
+                </section>
 
                 
-                <div class="section-div">
+                <section class="section-div">
                     <h2 class="subheader">Riktlinjer</h2>
                     <p>För att minska problemet med rymdskrot i omlopp runt rymden har riktlinjer tagits fram som tydliggör vad som ska gälla när en satellit slutfört sitt uppdrag har ESA dessutom tagit fram riktlinjer som ska hållas i åtanke under hela satellitens livscykel (European Space Agency, hämtat 18/4-2023).</p>
-                </div>
+                </section>
 
-                <!-- <div class="filler-div image-debris"></div> -->
-
-                <div class="section-div">
+                <section class="section-div">
                     <h2 class="subheader">Källor</h2>
                     <p>
                         Bergström, L. (2020, Oktober 23). Nedskräpning av rymden – ett accelererande problem — Forummag. Forummag. Hämtad 18/4-2023, från <a href="https://forummag.ksfmedia.fi/nedskrapning-av-rymden-ett-accelererande-problem">https://forummag.ksfmedia.fi/nedskrapning-av-rymden-ett-accelererande-problem</a>
@@ -133,9 +133,9 @@
                     <p>
                         Wikipedia. RemoveDEBRIS. Wikipedia. Hämtad 18/4-2023, från <a href="https://en.wikipedia.org/wiki/RemoveDEBRIS">https://en.wikipedia.org/wiki/RemoveDEBRIS</a>
                     </p>
-                </div>
+                </section>
 
-            </section>    
+            </div>    
     </main>
 
     <footer class="footer">
