@@ -16,7 +16,7 @@ a {
 
 img {
     width: 30%;
-    margin: 1rem;
+    margin-inline: 1rem;
     border-radius: 0.5rem;
 }
 
@@ -191,7 +191,7 @@ img {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 875px) {
     .header-with-nav a {
         display: block;
     }
