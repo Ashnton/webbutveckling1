@@ -211,9 +211,24 @@ img {
 }
 .grid-two-columns {
     display: grid;
+    grid-template-areas:
+    'div1 div2'
+    'div3 div4' ;
     grid-template-columns: 1fr 1fr;
-    place-items: center;
+    align-items:start;
 }
+    .info-div1{
+        grid-area:div1;
+    }
+    .info-div2{
+        grid-area:div2;
+    }
+    .info-div3{
+        grid-area:div3;
+    }
+    .info-div4{
+        grid-area:div4;
+    }
 
 .subheader {
     margin-top: 0.5rem;
@@ -325,6 +340,11 @@ img {
     .grid-two-columns {
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-areas: 
+        'div1'
+        'div2'
+        'div3'
+        'div4';
     }
 
 }
