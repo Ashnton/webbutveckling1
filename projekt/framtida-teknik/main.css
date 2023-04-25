@@ -56,11 +56,15 @@ a {
     background: linear-gradient(
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.2)
-        ), url(bilder/debris.jpg) no-repeat;
-    background-position: center;
-    background-size: cover;
+        ), url(bilder/debris.jpg);
     min-height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .hero-image-h1 {
     color: white;
     font-size: clamp(2rem, 5vw, 10rem);
@@ -88,6 +92,8 @@ a {
 }
 
 .styled-info-container {
+    height: fit-content;
+
     padding: 1rem;
     margin: 1rem;
 

@@ -13,35 +13,34 @@
         .info-div-grid {
             display: grid;
 
-            grid-template-columns: 1fr 1fr 1fr;
             grid-template-areas: 
-            'intro how how'
-            'intro removedebris removedebris'
-            'clearspace clearspace phasefour'
+            'intro'
+            'how'
+            'removedebris'
+            'clearspace'
+            'phasefour'
+            'guidelines'
+            'sources'
             ;
 
             margin: auto;
             max-width: 70rem;
         }
 
-        .intro-div {
-            grid-area: intro;
+        .section-div {
+            
         }
 
-        .how-div {
-            grid-area: how;
+        img {
+            width: 40%;
+            margin: 1rem;
         }
 
-        .removedebris-div {
-            grid-area: removedebris;
+        .float-right {
+            float: right;
         }
-
-        .clearspace-div {
-            grid-area: clearspace;
-        }
-
-        .phasefour-div {
-            grid-area: phasefour;
+        .float-left {
+            float: left;
         }
     </style>
 </head>
@@ -68,15 +67,19 @@
                     </svg>
                 </button>
             </section>
-
+            
+            
             <section>
                 <h1 class="hero-image-h1">Nedskräpning av rymden</h1>
             </section>
-
+        
+        </article>
+            
             <section class="info-div-grid">
-                <div class="styled-info-container intro-div">
+                <div class="section-div">
                     <h2 class="subheader">Bakgrund</h2>
                     <p>
+                        <img src="bilder/antons-bilder/graph.jpg" alt="Graf över antalet objekt i omloppsbana runt jorden" class="float-right">
                         Sedan Sovjetunionen skickade upp den första satelliten i omloppsbana 4 oktober 1957 (Tekniska museet, 2023) har ungefär 7500 till skickats upp varav 4300 fortfarande är i omloppsbana och av dessa fungerar endast 1200 stycken (Brunell, 2018).
                     </p>
                     <p>
@@ -84,30 +87,75 @@
                     </p> 
                 </div>
 
-                <div class="styled-info-container how-div">
+                <div class="section-div">
                     <h2 class="subheader">Hur löser vi problemet?</h2>
                     <p>
                         För att städa rymden utvecklas idag flera teknologier som alla bygger på att ändra skrotets bana för att det ska brinna upp i jordens atmosfär. 
                     </p>
-
-                    <p>RemoveDEBRIS var ett projekt som genomfördes av Surrey Space Centre tillsammans med Airbus mellan 2018 och 2021 (Wikipedia, hämtat 18/4-2023). Projektet syftade till att demonstrera flera nya teknologier utvecklade för städning av rymden samt att testa effektiviteten hos flera av dessa teknologier på simulerat rymdskrot i låg omloppsbana. </p>
                 </div>
 
-                <div class="styled-info-container removedebris-div">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem vero dolorem sunt vitae cupiditate aliquid dolorum explicabo, excepturi, ipsa laborum minus, tenetur fugit consequatur! Officiis ipsa amet cum natus!
+                <div class="section-div">
+                    <h2 class="subheader">RemoveDEBRIS</h2>
+                    <p>
+                        <img src="bilder/antons-bilder/removedebris-platform.jpg" alt="Ritning av removeDEBRIS-plattformen" class="float-left">
+                        RemoveDEBRIS var ett projekt som genomfördes av Surrey Space Centre tillsammans med Airbus mellan 2018 och 2021 (Wikipedia, hämtat 18/4-2023). Projektet syftade till att demonstrera flera nya teknologier utvecklade för städning av rymden samt att testa effektiviteten hos flera av dessa teknologier på simulerat rymdskrot i låg omloppsbana. 
+                    </p>
+                    <p>För att åstadkomma detta var removeDEBRIS-plattformen utrustad med ett nät, en harpun, en laseravståndsmätare, ett dragsegel och två mindre forskningssatelliter. Uppdraget var planerat att pågå i ett och ett halvt år och var i stora drag lyckat men dragseglets misslyckande med att vecklas ut försenade återinträdet med strax över två år. </p>
+                    <p>Nätet användes för att fånga in en bit simulerat rymdskrot för att ändra dess bana så att det föll in i jordens atmosfär och brann upp. Laseravståndsmätaren användes tillsammans med plattformens kameror för att få data och bilder för analys och harpunen användes för att avfyra en harpun ansluten i en lina mot en platta placerad på en arm fäst vid plattformen. Slutligen skulle dragseglet vecklas ut för att ta plattformen från sin omloppsbana in i jordens atmosfär för att där sönderfalla. Alla experiment utom det sista lyckades och därför betraktas uppdraget som en framgång.</p>
                 </div>
 
-                <div class="styled-info-container clearspace-div">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugit accusantium assumenda perspiciatis recusandae illum corporis praesentium quam eum explicabo, aspernatur reiciendis molestias temporibus molestiae sunt ipsam eligendi dicta soluta?
+                <div class="section-div">
+                    <h2 class="subheader">PhaseFour</h2>
+                    <p>
+                        <img src="bilder/antons-bilder/phasefour.jpg" alt="Bild av PhaseFours Maxwell-motor" class="float-right">
+                        Ett annat initiativ kommer från företaget Phase Four som vill använda radiovågor för att göra gas till plasma för att i sin tur använda den för att ändra små uttjänta satelliters kurs till att brinna upp i atmosfären (Bergström, 2020). Denna teknologi är enligt Phase Four delvis i bruk idag, åtta av deras framdrivningssystem är idag satta i produktion i omloppsbana kring jorden.
+                    </p>    
                 </div>
 
-                <div class="styled-info-container phasefour-div">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro quia deleniti sapiente vitae exercitationem veritatis iste maxime, qui obcaecati est unde, ipsum voluptatem vel. Illum atque soluta nobis tempora laudantium.
+                <div class="section-div">
+                    <h2 class="subheader">ClearSpace-1</h2>
+                    <p>
+                        <img src="bilder/antons-bilder/clearspace.png" alt="Visionsbild av ClearSpace-1-modulen" class="float-left">
+                        Ett tredje initiativ för att städa rymden kommer från ESA som inom ramarna av uppdraget ClearSpace-1 för första gången autonomt ska plocka ner en satellit från omloppsbana på ett säkert sätt. Trots att projektet leds av ESA har de lejt ut utförandet av uppdraget till den schweiziska start-up:en ClearSpace SA för att demonstrera teknologin och etablera en kommersiell sektor inom rymdstädning. Planen är att skjuta upp modulen år 2026 och då påbörja städningen av rymden. (European Space Agency, hämtat 19/4-2023)
+                    </p>
                 </div>
-            </section>
 
-        </article>
-    
+                <div class="section-div">
+                    <h2 class="subheader">Riktlinjer</h2>
+                    <p>För att minska problemet med rymdskrot i omlopp runt rymden har riktlinjer tagits fram som tydliggör vad som ska gälla när en satellit slutfört sitt uppdrag har ESA dessutom tagit fram riktlinjer som ska hållas i åtanke under hela satellitens livscykel (European Space Agency, hämtat 18/4-2023).</p>
+                </div>
+
+                <div class="section-div">
+                    <h2 class="subheader">Källor</h2>
+                    <p>
+                        Bergström, L. (2020, Oktober 23). Nedskräpning av rymden – ett accelererande problem — Forummag. Forummag. Hämtad 18/4-2023, från <a href="https://forummag.ksfmedia.fi/nedskrapning-av-rymden-ett-accelererande-problem">https://forummag.ksfmedia.fi/nedskrapning-av-rymden-ett-accelererande-problem</a>
+                    </p>
+
+                    <p>
+                        Brunell, E. (2018, Januari 17). För elva år sedan sköt Kina en satellit i tusen bitar – nu planeras en laserstation för att städa upp rymdskrotet (Från 2018). Svenska Yle. Hämtad 18/4-2023, från <a href="https://svenska.yle.fi/a/7-1271761">https://svenska.yle.fi/a/7-1271761</a>
+                    </p>
+
+                    <p>
+                        European Space Agency. (n.d.). ESA - ClearSpace-1. European Space Agency. Hämtad 19/4-2023, från <a href="https://www.esa.int/Space_Safety/ClearSpace-1">https://www.esa.int/Space_Safety/ClearSpace-1</a>
+                    </p>
+
+                    <p>
+                        European Space Agency. ESA - Mitigating space debris generation. European Space Agency. Hämtad 18/4-2023, från <a href="https://www.esa.int/Space_Safety/Space_Debris/Mitigating_space_debris_generation">https://www.esa.int/Space_Safety/Space_Debris/Mitigating_space_debris_generation</a>
+                    </p>
+
+                    <p>
+                        European Space Agency. (2022, April 22). ESA - ESA's Space Environment Report 2022. European Space Agency. Hämtad 18/4-2023, från <a href="https://www.esa.int/Space_Safety/Space_Debris/ESA_s_Space_Environment_Report_2022">https://www.esa.int/Space_Safety/Space_Debris/ESA_s_Space_Environment_Report_2022</a>
+                    </p>
+
+                    <p>
+                        Tekniska museet. (2023, Februari 1). Satelliten. Tekniska museet. Hämtad 18/4-2023, från <a href="https://www.tekniskamuseet.se/lar-dig-mer/100-innovationer/satelliten/">https://www.tekniskamuseet.se/lar-dig-mer/100-innovationer/satelliten/</a>
+                    </p>
+
+                    <p>
+                        Wikipedia. RemoveDEBRIS. Wikipedia. Hämtad 18/4-2023, från <a href="https://en.wikipedia.org/wiki/RemoveDEBRIS">https://en.wikipedia.org/wiki/RemoveDEBRIS</a>
+                    </p>
+                </div>  
+            </section>    
     </main>
 
     <footer class="footer">
