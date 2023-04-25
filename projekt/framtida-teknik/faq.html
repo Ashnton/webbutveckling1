@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vår startsida</title>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="js/nav.js" defer></script>
+    <script src="js/faq.js" defer></script>
+</head>
+
+<body>
+    
+    <main>
+        <div class="image-aliens fill-screen">
+            
+            <section class="header-with-nav">
+                <header>
+                    <h2>
+                        BigSpace
+                    </h2>
+                </header>
+                <nav class="nav" data-isMyMenuVisible="no">
+                    <a href="index.html">Start</a>
+                    <a href="resatillmars.html">Resan till Mars</a>
+                    <a href="marskoloni.html">Marskoloni</a>
+                    <a href="nedskrapning.html">Nedskräpning</a>
+                    <a href="faq.html" id="current">FAQ</a>
+                    <a href="om-oss.html">Om oss</a>
+                </nav>
+
+                <button id="myMenuBtn" class="inv-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-list mobile-nav-icon" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+            </section>
+            
+            
+            <section class="hero-content-container">
+                <h1 class="hero-image-h1">FAQ</h1>
+                <a class="btn-see-more bounce" href="#first-section"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="black" class="bi bi-arrow-down" id="arrow-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                    </svg>
+                </a>
+            </section>
+        </div>    
+
+        <section class="section-div">
+            
+            <div class="flex-between">
+                <h2>Hur långt bort är Mars från jorden?</h2>
+
+                <button id="toggle_1" class="btn-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="black" class="bi bi-arrow-down-square" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 2.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                    </svg>
+                </button>
+            </div>
+            <p id="answer1" data-visible="1">Mars ligger i genomsnitt ca 225 miljoner km bort från jorden. Avståndet varierar dock beroende på var de två planeterna befinner sig i sina omloppsbanor runt solen.</p>
+            
+            <div class="flex-between">
+                <h2>Vad är rymdskräp?</h2>
+
+                <button id="toggle_2" class="btn-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="black" class="bi bi-arrow-down-square" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 2.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                    </svg>
+                </button>
+            </div>
+            <p id="answer2" data-visible="1">Rymdskräp är obevakade och oönskade föremål som cirkulerar runt jorden och andra himlakroppar i rymden. Det kan inkludera allt från gamla satelliter och raketdelar till mindre skräp som har lämnats av människor.</p>
+
+            <div class="flex-between">
+                <h2>Vilka är farorna med rymdskräp?</h2>
+
+                <button id="toggle_3" class="btn-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="black" class="bi bi-arrow-down-square" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 2.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                    </svg>
+                </button>
+            </div>
+            <p id="answer3" data-visible="1">Rymdskräp kan vara farligt för rymdfarkoster och astronauter som befinner sig i omloppsbana runt jorden eller på andra platser i rymden. Rymdskräp kan kollidera med och skada rymdfarkoster och rymdstationer, vilket kan leda till allvarliga problem.</p>
+
+            <div class="flex-between">
+                <h2>Har Mars något vatten?</h2>
+
+                <button id="toggle_4" class="btn-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="black" class="bi bi-arrow-down-square" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 2.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                    </svg>
+                </button>
+            </div>
+            <p id="answer4" data-visible="1">Ja, det finns vatten på Mars, men det mesta av vattnet är antingen fruset i isform eller finns i form av vattenånga i atmosfären.</p>
+
+            <div class="flex-between">
+                <h2>Finns det några levande organismer på Mars?</h2>
+
+                <button id="toggle_5" class="btn-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="black" class="bi bi-arrow-down-square" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 2.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                    </svg>
+                </button>
+            </div>
+            <p id="answer5" data-visible="1">Det är okänt om det finns några levande organismer på Mars. Ingen har hittills bekräftat några tecken på liv på planeten.</p>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        Av: Anton Lidström, Leo WB, Seth Drabble
+    </footer>
+
+</body>
+</html>

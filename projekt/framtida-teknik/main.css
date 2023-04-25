@@ -101,6 +101,13 @@ img {
     background-color: #30333f;
 }
 
+.btn-toggle {
+    border: none;
+    background-color: transparent;
+
+    transition: ease-in-out 250ms;
+}
+
 .mobile-nav-icon {
     display: none;
 }
@@ -109,6 +116,8 @@ img {
     background: url(bilder/mars.jpg) no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+
     height: 100vh;
 }
 .image-debris {
@@ -116,6 +125,17 @@ img {
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.2)
         ), url(bilder/debris.jpg);
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image-mars {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.2)
+        ), url(bilder/seths-bilder/triptomars.jpg);
 
     background-attachment: fixed;
     background-position: center;
@@ -169,12 +189,19 @@ img {
     justify-content: center;
     flex-wrap: wrap;
 }
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .grid {
     display: grid;
 }
 .grid-two-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    place-items: center;
 }
 
 .subheader {
@@ -208,7 +235,7 @@ img {
     margin-inline: auto;
     margin-top: 2rem;
     margin-bottom: 4rem;
-    max-width: 70rem;
+    max-width: 55rem;
 
 }
 
@@ -240,7 +267,7 @@ img {
     animation: bounce 1s ease-in-out infinite alternate;
 }
 
-@media screen and (max-width: 70rem) {
+@media screen and (max-width: 55rem) {
     .section-div {
         margin: 1rem;
     }
@@ -287,7 +314,6 @@ img {
     .grid-two-columns {
         display: grid;
         grid-template-columns: 1fr;
-        place-items: center;
     }
 
 }
