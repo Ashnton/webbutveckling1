@@ -27,13 +27,13 @@
             max-width: 70rem;
         }
 
-        .section-div {
-            
+        img {
+            width: 30%;
+            margin: 1rem;
         }
 
-        img {
-            width: 40%;
-            margin: 1rem;
+        a {
+            word-break: break-all;
         }
 
         .float-right {
@@ -41,6 +41,26 @@
         }
         .float-left {
             float: left;
+        }
+
+        @media screen and (max-width: 70rem) {
+            .info-div-grid {
+                margin: 1rem;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .float-left {
+                float: none;
+            }
+            .float-right {
+                float: none;
+            }
+
+            img {
+                width: 90%;
+            }
+
         }
     </style>
 </head>
@@ -69,14 +89,20 @@
             </section>
             
             
-            <section>
+            <section style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
                 <h1 class="hero-image-h1">Nedskräpning av rymden</h1>
+                <a class="btn-see-more bounce" href="#first-section"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-down" id="arrow-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                    </svg>
+                </a>
+
             </section>
         
         </article>
             
             <section class="info-div-grid">
-                <div class="section-div">
+                <div class="section-div" id="first-section">
                     <h2 class="subheader">Bakgrund</h2>
                     <p>
                         <img src="bilder/antons-bilder/graph.jpg" alt="Graf över antalet objekt i omloppsbana runt jorden" class="float-right">
