@@ -8,50 +8,6 @@
 
     <link rel="stylesheet" href="main.css">
     <script src="js/nav.js" defer></script>
-
-    <style>
-        .info-div-grid {
-            display: grid;
-
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas: 
-            'intro mars-jorden mars-jorden'
-            'intro mars-jorden mars-jorden '
-            'how syre syre'
-            'likt elektricitet elektricitet'
-            'referens referens referens'
-            ;
-
-            margin: auto;
-            max-width: 70rem;
-        }
-
-        .intro-div {
-            grid-area: intro;
-        }
-
-        .mars-jorden-div {
-            grid-area: mars-jorden;
-        }
-
-        .how-div {
-            grid-area: how;
-        }
-
-        .syre-div {
-            grid-area: syre;
-        }
-
-        .elektricitet-div {
-            grid-area: elektricitet;
-        }
-        .likt-div {
-            grid-area: likt;
-        }
-        .referens-div {
-            grid-area: referens;
-        }
-    </style>
 </head>
 <body>
     
@@ -88,7 +44,7 @@
         </div>
 
             <section class="info-div-container">
-                <div class="section-div">
+                <div class="section-div" id="first-section">
                     <h2 class="subheader">Introduktion</h2>
                     <p>
                         <img src="bilder/leos-bilder/touchdown.jpg" alt="illustration av perserverance som landar på Mars" class="float-right">
