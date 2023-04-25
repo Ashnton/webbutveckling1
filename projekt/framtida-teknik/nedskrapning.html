@@ -8,66 +8,11 @@
 
     <link rel="stylesheet" href="main.css">
     <script src="js/nav.js" defer></script>
-
-    <style>
-        .info-div-grid {
-            display: grid;
-
-            grid-template-areas: 
-            'intro'
-            'how'
-            'removedebris'
-            'clearspace'
-            'phasefour'
-            'guidelines'
-            'sources'
-            ;
-
-            margin: auto;
-            max-width: 70rem;
-        }
-
-        img {
-            width: 30%;
-            margin: 1rem;
-        }
-
-        a {
-            word-break: break-all;
-        }
-
-        .float-right {
-            float: right;
-        }
-        .float-left {
-            float: left;
-        }
-
-        @media screen and (max-width: 70rem) {
-            .info-div-grid {
-                margin: 1rem;
-            }
-        }
-
-        @media screen and (max-width: 600px) {
-            .float-left {
-                float: none;
-            }
-            .float-right {
-                float: none;
-            }
-
-            img {
-                width: 90%;
-            }
-
-        }
-    </style>
 </head>
 <body>
     
     <main>
-        <article class="hero-image-debris">
+        <article class="image-debris fill-screen">
             
             <section class="header-with-nav">
                 <header>
@@ -101,7 +46,7 @@
         
         </article>
             
-            <section class="info-div-grid">
+            <section class="info-div-container">
                 <div class="section-div" id="first-section">
                     <h2 class="subheader">Bakgrund</h2>
                     <p>
@@ -116,9 +61,11 @@
                 <div class="section-div">
                     <h2 class="subheader">Hur löser vi problemet?</h2>
                     <p>
-                        För att städa rymden utvecklas idag flera teknologier som alla bygger på att ändra skrotets bana för att det ska brinna upp i jordens atmosfär. 
+                        För att städa rymden utvecklas idag flera teknologier som alla bygger på att ändra skrotets bana för att det ska brinna upp i jordens atmosfär. Ett flertal aktörer är aktiva inom ADR (Active Debris Removal) idag och det kommer ständigt privata och statliga initiativ. Här nedan har vi beskrivit ett urval av de mest lovande projekten.
                     </p>
                 </div>
+
+                <div class="filler-div image-debris"></div>
 
                 <div class="section-div">
                     <h2 class="subheader">RemoveDEBRIS</h2>
@@ -146,10 +93,13 @@
                     </p>
                 </div>
 
+                
                 <div class="section-div">
                     <h2 class="subheader">Riktlinjer</h2>
                     <p>För att minska problemet med rymdskrot i omlopp runt rymden har riktlinjer tagits fram som tydliggör vad som ska gälla när en satellit slutfört sitt uppdrag har ESA dessutom tagit fram riktlinjer som ska hållas i åtanke under hela satellitens livscykel (European Space Agency, hämtat 18/4-2023).</p>
                 </div>
+                
+                <!-- <div class="filler-div image-debris"></div> -->
 
                 <div class="section-div">
                     <h2 class="subheader">Källor</h2>
@@ -180,7 +130,8 @@
                     <p>
                         Wikipedia. RemoveDEBRIS. Wikipedia. Hämtad 18/4-2023, från <a href="https://en.wikipedia.org/wiki/RemoveDEBRIS">https://en.wikipedia.org/wiki/RemoveDEBRIS</a>
                     </p>
-                </div>  
+                </div>
+
             </section>    
     </main>
 
