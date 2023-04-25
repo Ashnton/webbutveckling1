@@ -11,6 +11,20 @@ body {
 
 a {
     color: blue;
+    word-break: break-all;
+}
+
+img {
+    width: 30%;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
 }
 
 .header-with-nav {
@@ -47,7 +61,7 @@ a {
 }
 
 .btn-see-more {
-    margin-top: 45vh;
+    margin-top: 40vh;
 
     background-color: transparent;
     color: white;
@@ -81,17 +95,20 @@ a {
     background-size: cover;
     height: 100vh;
 }
-.hero-image-debris {
+.image-debris {
     background: linear-gradient(
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.2)
         ), url(bilder/debris.jpg);
-    min-height: 100vh;
 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.fill-screen {
+    min-height: 100vh;
 }
 
 .hero-image-h1 {
@@ -132,6 +149,25 @@ a {
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
+.section-div {
+    margin-inline: auto;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    max-width: 70rem;
+
+}
+
+.filler-div {
+    height: 30vh;
+}
+
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+
 .footer {
     background-color: black;
     color: white;
@@ -147,6 +183,12 @@ a {
 /* Animation specific classes */
 .bounce {
     animation: bounce 1s ease-in-out infinite alternate;
+}
+
+@media screen and (max-width: 70rem) {
+    .section-div {
+        margin: 1rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -174,4 +216,18 @@ a {
         display: block;
     }
     
+
+    /* General styling */
+    .float-left {
+        float: none;
+    }
+    .float-right {
+        float: none;
+    }
+
+    img {
+        width: 90%;
+    }
+
+
 }
