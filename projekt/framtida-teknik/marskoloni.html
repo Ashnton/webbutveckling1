@@ -56,7 +56,7 @@
 <body>
     
     <main>
-        <article class="hero-image-debris">
+        <div class="image-debris fill-screen">
             
             <section class="header-with-nav">
                 <header>
@@ -75,65 +75,68 @@
                     </svg>
                 </button>
             </section>
-
-            <section>
+            <section style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
                 <h1 class="hero-image-h1">Marskolonisation</h1>
+                <a class="btn-see-more bounce" href="#first-section"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-down" id="arrow-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                    </svg>
+                </a>
             </section>
 
-            <section class="info-div-grid">
-                <div class="styled-info-container intro-div">
+        </div>
+
+            <section class="info-div-container">
+                <div class="section-div">
                     <h2 class="subheader">Introduktion</h2>
                     <p>
                         Människan har länge drömt om att bo på en annan planet och Mars verkar vara det bästa alternativet vi har. Tyvärr kan människor inte leva på Mars utan speciell utrustning, och snart är den här. 
                     </p> 
                 </div>
 
-                <div class="styled-info-container mars-jorden-div">
+                <div class="section-div">
                     <h2 class="subheader">Mars på jorden</h2>
                     <p>
                         Enligt The Guardian ska NASA testa en Marssimulator som fyra personer kommer att leva i i ett år. Deras boende är 3D-printat och har en luftsluss som leder till en utomhussektion (egentligen inomhus) där de ska utföra olika uppdrag. Dessutom kommer de att ha vr-utrustning och löpband så de “skulle kunna vandra i timmar”. Deras skräp kommer att analyseras för att ta fram ett hållbart skräp som kommer att gå att återvinna eller återanvändas av dem som bor på Mars. Dessutom kommer de ha en simulerad fördröjning av kommunikationen mellan de utanför experimentlokalen. De kommer också att förekomma situationer där deras redskap och utrustning slutar att fungera. Syftet med detta experiment är att testa om människor kan klara av att leva på Mars utan att må psykiskt dåligt, men också för att testa om de kan överleva genom att odla.
                     </p>
                 </div>
 
-                <div class="styled-info-container how-div">
+                <div class="section-div">
                     <h2 class="subheader">Hur vi ska öveleva</h2>
                     <p>
                         Planen är att skicka habitat och annat nödvändigt till Mars först, och sedan ca. 26 månader senare skicka de som ska bosätta sig eftersom att det är den optimala tiden att skicka nästa raket. 
                     </p>
                 </div>
 
-                <div class="styled-info-container syre-div">
+                <div class="section-div">
                     <h2 class="subheader">Syre på Mars</h2>
                     <p>
                         De som bor på Mars behöver syre. Därför har forskare på MIT tagit fram ett experiment som kallas MOXIE (Mars Oxygen In-Situ Resource Utilization Experiment) som fungerar som en bakåtvänd förbränningsmotor. Istället för att bränsle och syre bildar värme och gas, tas gasen och delas upp i bränsle och syre. Detta görs med hjälp av elektrolys och kräver dock därför elektricitet för att fungera. Med denna uppfinning kan astronauterna leva på Mars under en längre tid utan att dyra raketer behöver skicka syre till dem. Dock är den största fördelen med denna uppfinning att man kan utvinna syre till raketerna som tar människorna tillbaka till jorden. Det är nämligen så att bränslet som används i rymdraketer kräver extremt mycket syre, och om man skulle behöva skicka syre till Mars skulle man inte kunna skicka lika mycket av utrustningen i raketerna vilket skulle leda till att fler behöver skickas och därmed blir projektet dyrare. MOXIE testas just nu på Perseverance för att testa att den även fungerar på Mars. Eftersom att den är på Perseverance kunde den inte vara så stor, men en större variant skulle inte vara svårare att konstruera.                 </div>
                     </p>
                 </div>
-                <div class="styled-info-container elektricitet-div">
+                <div class="section-div">
                     <h2 class="subheader">Elektricitet på Mars</h2>
                     <p>
                         Dessutom består nästan 1% av jorden på Mars av ClO4-. ClO4- är giftigt för människor, men när man separerar syret från kloret frigörs stora mängder energi. Detta är perfekt som energikälla eftersom att ClO4 finns i överflöd på Mars. Tyvärr är denna reaktion explosiv och svår att kontrollera. Lyckligtvis finns det däremot bakterier som kan bryta ClO4-molekylerna åt oss vilket låter astronauter på Mars ha oändligt med ström.</div>
                     </p>
                 </div>
-                <div class="styled-info-container likt-div">
+                <div class="section-div">
                     <h2 class="subheader">Mars är likt jorden</h2>
                     <p>
                         Ett Marsdygn är 24h och 37min, och dessutom har Mars årstider precis som jorden, så det kommer nästan att kännas som hemma för de som kommer att bo där.                     </p>
                 </div>
-                <div class="styled-info-container referens-div">
+                <div class="section-div">
                     <h2 class="subheader">Referenser</h2>
                     <p>
                         The Guardian. (12 april 2023). <em>Inside the 3D-printed box in Texas where humans will prepare for Mars.</em> theguardian.com <a href="https://www.theguardian.com/science/2023/apr/12/nasa-texas-humans-prepare-Mars">https://www.theguardian.com/science/2023/apr/12/nasa-texas-humans-prepare-Mars</a>
                         <br><br>
-                        Georgina Torbet. (30 mars 2021). <em>Artificial atmospheres: mars-jorden we’ll build a base with breathable air on Mars. Digitaltrends.com</em> <a nref="https://www.digitaltrends.com/web/mars-jorden-to-build-a-mars-base-habitat/">https://www.digitaltrends.com/web/mars-jorden-to-build-a-mars-base-habitat/</a>
+                        Georgina Torbet. (30 mars 2021). <em>Artificial atmospheres: mars-jorden we’ll build a base with breathable air on Mars. Digitaltrends.com</em> <a href="https://www.digitaltrends.com/web/how-to-build-a-mars-base-habitat/">https://www.digitaltrends.com/web/mars-jorden-to-build-a-mars-base-habitat/</a>
                         <br><br>
-                        Linde, P. (2013). Jakten på liv i universum (1 uppl.). Karavan Förlag
+                        Linde, P. (2013). <em>Jakten på liv i universum</em> (1 uppl.). Karavan Förlag
                         <br><br>
                         Hecht, M. (Mars 2020). <em>MOXIE</em> nasa.gov <a href="https://mars.nasa.gov/mars2020/spacecraft/instruments/moxie/">https://mars.nasa.gov/mars2020/spacecraft/instruments/moxie/</a>
                     </div>
-            </section>
-
-        </article>
-    
+            </section>    
     </main>
 
     <footer class="footer">
