@@ -19,6 +19,11 @@ img {
     margin-inline: 1rem;
     border-radius: 0.5rem;
 }
+.bigger-img{
+    width:40%;
+    margin-inline: 1rem;
+    border-radius: 0.5rem;
+}
 
 .float-left {
     float: left;
@@ -122,6 +127,17 @@ img {
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.2)
         ), url(bilder/aliens.jpg);
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image-mars-planet {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.2)
+        ), url(bilder//leos-bilder/mars-planet.jpg);
 
     background-attachment: fixed;
     background-position: center;
